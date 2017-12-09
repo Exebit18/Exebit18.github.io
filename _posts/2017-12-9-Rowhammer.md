@@ -24,7 +24,7 @@ Internally, the row buffer working is as follows:
 
 However, the charge in the rows are not persistent. Hence, the rows need to be constantly refreshed. Every DRAM comes with a minimum time for which charge can be held in the DRAM cell. The minimum time is typically specified by the DRAM manufacturer. Based on this minimum time, the memory controller chooses to refresh the cells.
 
-![DRAM concept](https://github.com/Exebit18/Exebit18.github.io/blob/master/images/rowhammerimg1.jpg)
+![DRAM concept]({{"/images/rowhammerimg1.jpg"}})
 
 When a row’s voltage is toggled repeatedly, some cells in nearby rows leak charge at a much faster rate. These cells may not hold charge for the minimum time specified by the DRAM manufacturer. By repeatedly accessing addresses in the same bank but different rows, we can cause a row’s voltage to toggle repeatedly. This would cause the cell to lose charge before it can be refreshed. This is the basis for the rowhammer attack. Increasing the cell density in DRAMs increases the discharge rate and hence makes the DRAM more vulnerable to the rowhammer attack.
 
@@ -42,7 +42,7 @@ Choosing two addresses belonging to the same bank can be a complicated process. 
 
 The below screenshots demonstrate the rowhammer attack. The accessible address space is initialized with all bits as 1. So, originally, every location would have 0xffffffffffffffff, when 64 bits are counted from that address. The addresses are accessed as mentioned above and then it is checked if any of the bits have toggled to a 0.  In the below case, the content of the address changes to 0xbfffffffffffffff.
 
-![output](https://github.com/Exebit18/Exebit18.github.io/blob/master/images/rowhammerimg2.jpg)
+![output]({{"/images/rowhammerimg2.jpg"}})
 
 ## References:
 1. [Rowhammer on Wikipedia](https://en.wikipedia.org/wiki/Row_hammer)
