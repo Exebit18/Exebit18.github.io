@@ -29,6 +29,7 @@ However, the charge in the rows are not persistent. Hence, the rows need to be c
 When a row’s voltage is toggled repeatedly, some cells in nearby rows leak charge at a much faster rate. These cells may not hold charge for the minimum time specified by the DRAM manufacturer. By repeatedly accessing addresses in the same bank but different rows, we can cause a row’s voltage to toggle repeatedly. This would cause the cell to lose charge before it can be refreshed. This is the basis for the rowhammer attack. Increasing the cell density in DRAMs increases the discharge rate and hence makes the DRAM more vulnerable to the rowhammer attack.
 
 ##The Attack
+
 To get the attack working, we should access two addresses in the same bank but different rows alternately. With such an access pattern, the row buffer would be frequently charged and discharged. This would cause charges to be lost at a much faster rate, hence leading to change in the contents of the memory.
 
 However, doing that by itself is not simple. Since every modern system has a cache memory to store the contents of the recently used addresses, the task is further complicated. This is because the first access to the addresses will be served from the DRAM, whereas subsequent accesses will be served from the cache. If this happened, the DRAM would be accessed only the first time and hence the attack would not be induced.
