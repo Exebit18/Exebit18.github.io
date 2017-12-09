@@ -1,7 +1,7 @@
 ---
-Layout : post
-Title : About Rowhammer
-Category : [Cyber Security,]
+layout : post
+title : About Rowhammer
+category : [CyberSecurity,]
 ---
 
 # Rowhammer
