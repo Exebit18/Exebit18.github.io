@@ -5,9 +5,8 @@ layout: default
 <div class="posts clearfix">
 	
 	<div class="left">
-		<ul>
 		{% for post in site.posts %}
-			<li>
+			<div>
 				<h2 style="font-size: 32px; line-height: 1.25em; font-family: avenir-lt-w01_35-light1475496,sans-serif;">
                   <a class="post-link" href="{{ site.baseurl }}{{ post.url }} ">{{ post.title }}</a>
                 </h2>
@@ -19,10 +18,9 @@ layout: default
                 </div>
 			
 				<div class ="btn btn-default" onclick="window.location.href='{{ site.baseurl }}{{ post.url }}'">Read All</div>
-			</li>
-
+			</div>
+			<br>
 		{% endfor %}
-		</ul>
 	</div>
 
 	<div class="right">
@@ -36,7 +34,7 @@ layout: default
                 {% endfor %}
             </ul>
         </div>
-
+        <br>
 		<div class="side ">
 			<div style="font-size:20px">
 				Categories
