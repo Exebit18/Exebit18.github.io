@@ -2,15 +2,35 @@
 layout: default
 ---
 
-<div class="posts">
+<div class="posts clearfix">
+	<div class="left">
+		<ul>
+		{% for post in site.posts %}
+			<li>
+				<h2>
+                  <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                </h2>
+                        {{ post.date | date: "%F" }}
+				<div class="excerpt">
+                    {{post.excerpt}}
+                </div>
+				<div class="read-all">
+                    <a  href="{{ site.baseurl }}{{ post.url }}"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+			</li>
+
+		{% endfor %}
+		</ul>
+	</div>
+
 	{% for category in site.categories %}
   		<div id="{{category | first}}">
     		<h1><a href="{{ site.baseurl }}/category/{{ category | first }}">{{ category | first }}</a></h1>
   		
   			<ul>
 			{% for posts in category %}
-				{% for post in posts %}
-					{% if post.title !=  %}
+				{% for post in posts  %}
+					{% if post.title  %}
     				<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 					{% endif %}
 	  			{% endfor %}
