@@ -4,8 +4,6 @@ title: Monte Carlo Simulations in Python - Pi Estimation!
 category: [PythonOneLiners, MonteCarlo]
 ---
 
-## Estimation of pi
-
 Here's a simple python function to estimate value of pi by sampling from uniform distributions:
 
 ```python

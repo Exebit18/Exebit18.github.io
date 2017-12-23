@@ -3,82 +3,57 @@ layout: default
 ---
 
 <div class="posts clearfix">
+	
 	<div class="left">
 		<ul>
 		{% for post in site.posts %}
 			<li>
-				<h2 style="font-size: 32px;
-    line-height: 1.25em;
-    font-family: avenir-lt-w01_35-light1475496, sans-serif;">
+				<h2 style="font-size: 32px; line-height: 1.25em; font-family: avenir-lt-w01_35-light1475496,sans-serif;">
                   <a class="post-link" href="{{ site.baseurl }}{{ post.url }} ">{{ post.title }}</a>
                 </h2>
-                        {{ post.date | date: "%F" }}
+            
+                {{ post.date | date: "%-d %B %Y" }}
+			
 				<div class="excerpt" >
-                    {{post.excerpt}}
+                    {{ post.excerpt | truncatewords: 25}}
                 </div>
-				<input class ="MyButton" type="button" value="Read All" onclick="window.location.href='{{ site.baseurl }}{{ post.url }}'"></input>
-
+			
+				<div class ="btn btn-default" onclick="window.location.href='{{ site.baseurl }}{{ post.url }}'">Read All</div>
 			</li>
 
 		{% endfor %}
 		</ul>
 	</div>
 
-	<div class = "right">
+	<div class="right">
 		<div class="side">
-                <div style="font-size:20px">
-                    Recent Posts
-                </div>
-                <ul class="content-ul" recent>
-                    {% for post in site.posts offset: 0 limit: 10  %}
-                        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-                    {% endfor %}
-                </ul>
+            <div style="font-size:20px">
+                Recent Posts
             </div>
+            <ul class="content-ul" recent>
+                {% for post in site.posts offset: 0 limit: 10  %}
+                    <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
 
-
-	<div class="side ">
-		<div style="font-size:20px">
-			Categories
+		<div class="side ">
+			<div style="font-size:20px">
+				Categories
+			</div>
+			<ul class="content-ul" cate>
+				{% for category in site.categories %}
+				<li>
+					<a href="{{ site.baseurl }}/category/{{ category | first }}" >
+						<span class="name">
+							{{ category | first }}
+						</span>
+						<span class="badge">{{ category | last | size }}</span>
+					</a>
+				</li>
+				{% endfor %}
+			</ul>
 		</div>
-		<ul class="content-ul" cate>
-			{% for category in site.categories %}
-			<li>
-				<a href="{{ site.baseurl }}/category/{{ category | first }}" >
-					<span class="name">
-						{{ category | first }}
-					</span>
-					<span class="badge">{{ category | last | size }}</span>
-				</a>
-			</li>
-			{% endfor %}
-		</ul>
 	</div>
-	</div>
-
-
-
-
-	{% for category in site.categories %}
-  		<div id="{{category | first}}">
-    		<h1><a href="{{ site.baseurl }}/category/{{ category | first }}">{{ category | first }}</a></h1>
-
-  			<ul>
-			{% for posts in category %}
-				{% for post in posts  %}
-					{% if post.title  %}
-    				<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-					{% endif %}
-	  			{% endfor %}
-	  		{% endfor %}
-  			</ul>
-  		</div>
-	{% endfor %}
-
 
 </div>
-<footer>
-  <p>xyz@gmail.com</p>
-  <p>Contact information:1234432112 </p>
-  <p>Indian Institute of Technology Madras</p>
-</footer>
