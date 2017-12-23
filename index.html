@@ -22,6 +22,18 @@ layout: default
 		{% endfor %}
 		</ul>
 	</div>
+	<div class = "right">
+		<div class="side">
+                <div>
+                    Recent Posts
+                </div>
+                <ul class="content-ul" recent>
+                    {% for post in site.posts offset: 0 limit: 10  %}
+                        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+	</div>
 
 	{% for category in site.categories %}
   		<div id="{{category | first}}">
