@@ -22,6 +22,7 @@ layout: default
 		{% endfor %}
 		</ul>
 	</div>
+
 	<div class = "right">
 		<div class="side">
                 <div>
@@ -33,6 +34,25 @@ layout: default
                     {% endfor %}
                 </ul>
             </div>
+
+
+	<div class="side ">
+		<div>
+			Categories
+		</div>
+		<ul class="content-ul" cate>
+			{% for category in site.categories %}
+			<li>
+				<a href="{{ site.baseurl }}/category/{{ category | first }}" ">
+					<span class="name">
+						{{ category | first }}
+					</span>
+					<span class="badge">{{ category | last | size }}</span>
+				</a>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
 	</div>
 
 	{% for category in site.categories %}
@@ -50,4 +70,6 @@ layout: default
   			</ul>
   		</div>
 	{% endfor %}
+
+
 </div>
