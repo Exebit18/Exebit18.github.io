@@ -270,15 +270,14 @@ font-size: 25px;
             line-height: 1.6;
             font-size: 16px;
             font-family: arial,helvetica,sans-serif;
-            background-color: #fff;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.4),0 0 30px rgba(10,10,0,0.1) inset;
+            /*background-color: #fff;*/
+            /*box-shadow: 0 1px 2px rgba(0,0,0,0.4),0 0 30px rgba(10,10,0,0.1) inset;*/
             >h1 {
                 margin-bottom: -10px;
             }
             a:not([title]){
                 word-break: break-all;
                 color: rgba(66,72,79,1);
-
 
             }
             ul {
@@ -367,8 +366,8 @@ font-size: 25px;
         }
         .side {
             box-sizing: border-box;
-            background-color: #fff;
-            box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.3), 0 0 30px rgba(10, 10, 0, 0.1) inset;
+            /*background-color: #fff;*/
+            /*box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.3), 0 0 30px rgba(10, 10, 0, 0.1) inset;*/
             padding-bottom: 1px;
             -ms-word-break: break-all;
             word-break: break-all;
@@ -382,7 +381,7 @@ font-size: 25px;
                 padding: 12px 15px;
 
                 // margin-right: -10px;
-                border-bottom: 1px solid #c0c0c0;
+                /*border-bottom: 1px solid #c0c0c0;*/
 
                 font-weight: bold;
                 font-style: normal;

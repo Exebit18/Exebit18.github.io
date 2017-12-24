@@ -7,12 +7,11 @@ layout: default
 	<div class="left">
 		{% for post in site.posts %}
 			<div>
-				<h2 style="font-size: 32px; line-height: 1.25em; font-family: avenir-lt-w01_35-light1475496,sans-serif;">
+				<h2 style="font-size: 32px; line-height: 1.25em; font-family: avenir-lt-w01_35-light1475496,sans-serif; margin-bottom: 0px;">
                   <a class="post-link" href="{{ site.baseurl }}{{ post.url }} ">{{ post.title }}</a>
-                </h2>
-            
-                {{ post.date | date: "%-d %B %Y" }}
-			
+                </h2>            
+                <span style="font-style: italic; color: grey;">{{ post.date | date: "%B %-d, %Y" }}</span>
+				<br><br>
 				<div class="excerpt" >
                     {{ post.excerpt | truncatewords: 25}}
                 </div>
@@ -28,29 +27,33 @@ layout: default
             <div style="font-size:20px">
                 Recent Posts
             </div>
-            <ul class="content-ul" recent>
+            <div>
                 {% for post in site.posts offset: 0 limit: 10  %}
-                    <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+                    <div>
+                    	<a href="{{ site.baseurl }}{{ post.url }}" style="font-size: 0.8em;">{{ post.title }}</a>
+                		<br><span style="font-style: italic; color: grey; font-size: 0.7em;">{{ post.date | date: "%B %-d, %Y" }}</span>
+                	</div>
+            		<br>
                 {% endfor %}
-            </ul>
+            </div>
         </div>
         <br>
-		<div class="side ">
-			<div style="font-size:20px">
+		<div class="side">
+			<div style="font-size:20px; padding-bottom: 0px;">
 				Categories
 			</div>
-			<ul class="content-ul" cate>
+			<div style="padding-top: 10px;">
 				{% for category in site.categories %}
-				<li>
+				<div>
 					<a href="{{ site.baseurl }}/category/{{ category | first }}" >
-						<span class="name">
+						<span class="badge">{{ category | last | size }}</span>
+						<span class="name" style="font-size: 0.7em; font-style: italic;">
 							{{ category | first }}
 						</span>
-						<span class="badge">{{ category | last | size }}</span>
 					</a>
-				</li>
+				</div>
 				{% endfor %}
-			</ul>
+			</div>
 		</div>
 	</div>
 
