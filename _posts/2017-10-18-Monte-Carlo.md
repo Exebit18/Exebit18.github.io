@@ -2,6 +2,7 @@
 layout: post
 title: Monte Carlo Simulations in Python - Pi Estimation!
 category: [PythonOneLiners, MonteCarlo]
+date:   2015-06-17 14:06:05
 ---
 
 ## Estimation of pi
