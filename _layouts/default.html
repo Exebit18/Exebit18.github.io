@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
@@ -34,37 +35,37 @@
 
   <body>
     <div class="wrapper-masthead">
-      <div class="container">
+      <div>
 
         <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
+          <a href="{{ site.baseurl }}/" class="site-avatar" style="margin-left: 15%"><img src="{{ site.avatar }}" style="width: 68px; height: 80px;" /></a>
           <div class="site-info">
+            <br>
             <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
           </div>
 
-          <nav style="text-align:right;" >
+          <nav style="text-align:right; margin-right: 15%">
             <a href="">xyz@gmail.com</a>
             <br>
             <a href="{{ site.baseurl }}/about">123-456-7890</a>
           </nav>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
+
+          <br><br><br><br><br>
+
           <div class="header-aux">
 
+            <ul style="margin-left: 15%">
+              <li><a class="active" href="#home" style="padding-top: 10px; padding-bottom: 10px;">Home</a></li>
+              <li><a href="{{ site.baseurl }}/" style="padding-top: 10px; padding-bottom: 10px">Blog</a></li>
+              <li><a style="padding-top: 10px; padding-bottom: 10px">About</a></li>
+              <li><i class="fa fa-facebook" aria-hidden="true" style="padding-top: 10px; padding-bottom: 10px"></i></li>
+              <li><i class="fa fa-google-plus" aria-hidden="true"style="padding-top: 10px; padding-bottom: 10px"></i></li>
+              <li><i class="fa fa-youtube-play" aria-hidden="true"style="padding-top: 10px; padding-bottom: 10px ;"></i></li>
+            </ul>
 
-          <ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="{{ site.baseurl }}/">Blog</a></li>
-  <li><a href="#subscribe">Subscribe</a></li>
-  <li><a href="#contact">Contact</a></li>
-</ul>
 
-</div>
+          </div>
 
         </header>
       </div>
@@ -73,6 +74,7 @@
 
     <div id="main" role="main" class="container">
       {{ content }}
+
     </div>
 
     <div class="wrapper-footer">
@@ -84,10 +86,16 @@
             Indian Institute of Technology Madras
           </div>
           <br>
-          {% include svg-icons.html %}
+          <div >
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-google-plus" aria-hidden="true"></i>
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+          </div>
+
         </footer>
         <div class="footer-aux">
-          ©2017 by Exebit 2018.
+          ©2017 by Exebit 2018
+
         </div>
       </div>
     </div>

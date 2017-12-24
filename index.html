@@ -1,22 +1,32 @@
 ---
 layout: default
 ---
+<div class="info" style="width: 100%" >
+
+	<p style="font-weight: normal;color:rgba(255,255,255,1);text-transform: uppercase;vertical-align: baseline;text-align: center;line-height: 1.14em;font-size:88px; font-family:avenir-lt-w01_85-heavy1475544,sans-serif; ">EXEBIT 2018</p>
+	<p style="text-transform: uppercase; color: #38C098; text-align: center;line-height: 1.46em; letter-spacing: normal; font-size: 24px; font-family: avenir-lt-w01_35-light1475496, sans-serif;">
+		EXPERIENCE THE FUTURE OF COMPUTER SCIENCE HERE IN <br>IITM
+	</p>
+	<p style="color: rgba(255,255,255,1); text-align: center;line-height: 1.55em; letter-spacing: normal; font-size: 16px;font-family: avenir-lt-w01_35-light1475496, sans-serif;font-style: normal;font-variant-ligatures: normal;font-variant-caps: normal;font-variant-numeric: normal;font-variant-east-asian: normal;font-weight: normal;font-stretch: normal;">
+Exebit is the annual festival of the Computer Science and Engineering department at IIT Madras.<br>Students at IIT Madras constantly innovate and have known to bring developments in technology.<br>In the big data era, we see that Computer Science plays a pivotal role in the development of<br>technology and is currently a fast-growing field. For example, the recommendations a person gets<br>when he visits an e-commerce website is according to what he has bought previously. These<br>recommendations are based on applications from Machine Learning. It is also necessary that the<br>analyzed data is stored securely, which are based on Cryptography and Systems Security
+	</p>
+</div>
+<br>
 
 <div class="posts clearfix">
-	
+
 	<div class="left">
 		{% for post in site.posts %}
 			<div>
-				<h2 style="font-size: 32px; line-height: 1.25em; font-family: avenir-lt-w01_35-light1475496,sans-serif;">
+				<h2 style="font-size: 32px; line-height: 1.25em; font-family: avenir-lt-w01_35-light1475496,sans-serif; margin-bottom: 0px;">
                   <a class="post-link" href="{{ site.baseurl }}{{ post.url }} ">{{ post.title }}</a>
                 </h2>
-            
-                {{ post.date | date: "%-d %B %Y" }}
-			
+                <span style="font-style: italic; color: grey;">{{ post.date | date: "%B %-d, %Y" }}</span>
+				<br><br>
 				<div class="excerpt" >
                     {{ post.excerpt | truncatewords: 25}}
                 </div>
-			
+
 				<div class ="btn btn-default" onclick="window.location.href='{{ site.baseurl }}{{ post.url }}'">Read All</div>
 			</div>
 			<br>
@@ -24,33 +34,39 @@ layout: default
 	</div>
 
 	<div class="right">
+		<br>
+
 		<div class="side">
             <div style="font-size:20px">
                 Recent Posts
             </div>
-            <ul class="content-ul" recent>
+            <div>
                 {% for post in site.posts offset: 0 limit: 10  %}
-                    <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+                    <div>
+                    	<a href="{{ site.baseurl }}{{ post.url }}" style="font-size: 0.8em;">{{ post.title }}</a>
+                		<br><span style="font-style: italic; color: grey; font-size: 0.7em;">{{ post.date | date: "%B %-d, %Y" }}</span>
+                	</div>
+            		<br>
                 {% endfor %}
-            </ul>
+            </div>
         </div>
         <br>
-		<div class="side ">
-			<div style="font-size:20px">
+		<div class="side">
+			<div style="font-size:20px; padding-bottom: 0px;">
 				Categories
 			</div>
-			<ul class="content-ul" cate>
+			<div style="padding-top: 10px;">
 				{% for category in site.categories %}
-				<li>
+				<div>
 					<a href="{{ site.baseurl }}/category/{{ category | first }}" >
-						<span class="name">
+						<span class="badge">{{ category | last | size }}</span>
+						<span class="name" style="font-size: 0.7em; font-style: italic;">
 							{{ category | first }}
 						</span>
-						<span class="badge">{{ category | last | size }}</span>
 					</a>
-				</li>
+				</div>
 				{% endfor %}
-			</ul>
+			</div>
 		</div>
 	</div>
 
