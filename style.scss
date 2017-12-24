@@ -209,12 +209,40 @@ img {
     margin: 3px 0;
   }
 }
+.header-aux
+{
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #eeeeef;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #42484F;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #5cc198;
+}
+}
 
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
   font-size: 18px;
+  line-height: 1.55em;
 
   @include mobile {
     float: none;
@@ -228,7 +256,9 @@ nav {
     color: $darkGray;
     text-align: right;
     font-weight: 300;
+    color:rgba(66,72,79,1);
     letter-spacing: 1px;
+    font-size: 15px;
 
     @include mobile {
       margin: 0 10px;
