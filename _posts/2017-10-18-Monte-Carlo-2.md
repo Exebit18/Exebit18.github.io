@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Monte Carlo Simulations in Python - e Estimation!
+title: Monte Carlo Estimation of e
 category: [MonteCarlo, ]
 ---
 
 Here's a simple python function to estimate value of e by sampling from uniform distributions:
 
 ```python
+import random as r
 num_iters = 1000000
 
 def get_e_trial():
