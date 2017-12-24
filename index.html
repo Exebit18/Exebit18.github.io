@@ -7,16 +7,17 @@ layout: default
 		<ul>
 		{% for post in site.posts %}
 			<li>
-				<h2>
-                  <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+				<h2 style="font-size: 32px;
+    line-height: 1.25em;
+    font-family: avenir-lt-w01_35-light1475496, sans-serif;">
+                  <a class="post-link" href="{{ site.baseurl }}{{ post.url }} ">{{ post.title }}</a>
                 </h2>
                         {{ post.date | date: "%F" }}
-				<div class="excerpt">
+				<div class="excerpt" >
                     {{post.excerpt}}
                 </div>
-				<div class="read-all">
-                    <a  href="{{ site.baseurl }}{{ post.url }}"><i class="fa fa-newspaper-o"></i>Read All</a>
-                </div>
+				<input class ="MyButton" type="button" value="Read All" onclick="window.location.href='{{ site.baseurl }}{{ post.url }}'"></input>
+
 			</li>
 
 		{% endfor %}
@@ -25,7 +26,7 @@ layout: default
 
 	<div class = "right">
 		<div class="side">
-                <div>
+                <div style="font-size:20px">
                     Recent Posts
                 </div>
                 <ul class="content-ul" recent>
@@ -37,13 +38,13 @@ layout: default
 
 
 	<div class="side ">
-		<div>
+		<div style="font-size:20px">
 			Categories
 		</div>
 		<ul class="content-ul" cate>
 			{% for category in site.categories %}
 			<li>
-				<a href="{{ site.baseurl }}/category/{{ category | first }}" ">
+				<a href="{{ site.baseurl }}/category/{{ category | first }}" >
 					<span class="name">
 						{{ category | first }}
 					</span>
@@ -55,10 +56,13 @@ layout: default
 	</div>
 	</div>
 
+
+
+
 	{% for category in site.categories %}
   		<div id="{{category | first}}">
     		<h1><a href="{{ site.baseurl }}/category/{{ category | first }}">{{ category | first }}</a></h1>
-  		
+
   			<ul>
 			{% for posts in category %}
 				{% for post in posts  %}
@@ -73,3 +77,8 @@ layout: default
 
 
 </div>
+<footer>
+  <p>xyz@gmail.com</p>
+  <p>Contact information:1234432112 </p>
+  <p>Indian Institute of Technology Madras</p>
+</footer>

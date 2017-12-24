@@ -269,13 +269,17 @@ font-size: 25px;
             padding: 20px 30px;
             line-height: 1.6;
             font-size: 16px;
-            background-color: #f8f8fd;
+            font-family: arial,helvetica,sans-serif;
+            background-color: #fff;
             box-shadow: 0 1px 2px rgba(0,0,0,0.4),0 0 30px rgba(10,10,0,0.1) inset;
             >h1 {
                 margin-bottom: -10px;
             }
             a:not([title]){
                 word-break: break-all;
+                color: rgba(66,72,79,1);
+
+
             }
             ul {
                 >h2 {
@@ -284,7 +288,17 @@ font-size: 25px;
                 }
                 li {
                     line-height: 1.8;
-                    color: #888888;
+                    color: rgba(66,72,79,1);
+                    font-style: normal;
+                    font-variant-ligatures: normal;
+                    font-variant-caps: normal;
+                    font-variant-numeric: normal;
+                    font-variant-east-asian: normal;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-size: 16px;
+                    line-height: 1.55em;
+                    font-family: avenir-lt-w01_35-light1475496, sans-serif;
                     time {
                         display: inline-block;
                         width: 135px;
@@ -352,7 +366,7 @@ font-size: 25px;
         }
         .side {
             box-sizing: border-box;
-            background-color: #f8f8fd;
+            background-color: #fff;
             box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.3), 0 0 30px rgba(10, 10, 0, 0.1) inset;
             padding-bottom: 1px;
             -ms-word-break: break-all;
@@ -368,11 +382,31 @@ font-size: 25px;
 
                 // margin-right: -10px;
                 border-bottom: 1px solid #c0c0c0;
-                font-size: 16px;
+
                 font-weight: bold;
+                font-style: normal;
+                font-variant-ligatures: normal;
+                font-variant-caps: normal;
+                font-variant-numeric: normal;
+                font-variant-east-asian: normal;
+                font-weight: normal;
+                font-stretch: normal;
+                font-size: 20px;
+                line-height: 1.5em;
+                font-family: avenir-lt-w01_35-light1475496, sans-serif;
             }
             a {
-                color: #4d6dad;
+                color: rgba(66,72,79,1);;
+                font-style: normal;
+                font-variant-ligatures: normal;
+                font-variant-caps: normal;
+                font-variant-numeric: normal;
+                font-variant-east-asian: normal;
+                font-weight: normal;
+                font-stretch: normal;
+                font-size: 20px;
+                line-height: 1.5em;
+                font-family: avenir-lt-w01_35-light1475496, sans-serif;
                 transition: 0.5s ease;
                 &:hover {
                     color: #223253;
@@ -399,6 +433,23 @@ font-size: 25px;
     font-style: italic;
   }
 
+  input.MyButton {
+  width: 300px;
+  padding: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  background: #5cc198;
+  color: #fff;
+  border: 1px solid #3366cc;
+  border-radius: 10px;
+
+  }
+  input.MyButton:hover {
+  color: #fff;
+  background: #5cc198;
+  border: 1px solid #fff;
+  }
   .comments {
     margin-top: 10px;
   }
@@ -416,9 +467,15 @@ font-size: 25px;
   background-color: $lightGray;
 }
 
-footer {
+
+footer  {
   padding: 20px 0;
   text-align: center;
+  background-color: #42484f;
+  color:rgba(255,255,255,1);
+  font-size: 16px;
+    font-family: Arial,Helvetica,sans-serif;
+    line-height: 1.55em;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
