@@ -559,6 +559,43 @@ footer  {
   border: 1px solid lightgrey;
 }
 
+.lefthead {
+  margin-left: 15% !important;
+}
+
+.righthead {
+  margin-right: 15% !important;
+}
+
+.righthead2 {
+  margin-right: 18% !important;
+}
+
+.main-content {
+  width: 60%; 
+  margin: auto;
+}
+
+@media (max-width: 850px) {
+  .lefthead {
+    margin-left: 5% !important;
+  }
+
+  .righthead {
+    margin-right: 5% !important;
+  }
+
+  .righthead2 {
+    margin-right: 5% !important;
+  }
+
+  .main-content {
+    width: 90%;
+    margin: auto; 
+  }
+}
+
+
 /*Stupid file doesnt regen*/
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
