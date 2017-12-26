@@ -3,7 +3,6 @@
   <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Raleway" rel="stylesheet">
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
@@ -16,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/bootstrap.min.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+
     <style type="text/css">
     	html{
     		height: 100%;
@@ -32,37 +31,34 @@
     		flex: 1;
     	}
     </style>
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
   <body>
-    <div class="wrapper-masthead">
+    <div class="wrapper-masthead" style="margin-bottom: 0px;">
       <div>
 
-        <header class="masthead clearfix">
+        <header class="masthead clearfix" style="padding-bottom: 0px;">
 
-          <a href="{{ site.baseurl }}/" class="site-avatar" style="margin-left: 15%"><img src="{{ site.avatar }}" style="width: 68px; height: 80px;" /></a>
-
+          <a href="{{ site.baseurl }}/" class="site-avatar lefthead"><img src="{{ site.avatar }}" style="width: 68px; height: 80px;" /></a>
           <div class="site-info">
             <br>
             <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
           </div>
 
-          <nav style="text-align:right; margin-right: 15%">
+          <nav class="righthead" style="text-align:right;">
             <a href="{{ site.baseurl }}/about">xyz@gmail.com</a>
             <br>
-            <a href="{{ site.baseurl }}/about">123-456-7890</a>
+            <a href="{{ site.baseurl }}/about">123-456-7890&nbsp;</a>
           </nav>
 
-          <br><br><br><br><br><br>
+          <br><br><br><br><br>
 
           <div class="header-aux">
-            <ul class="active" style="margin-left: 15%">
-              <li><a href="{{ site.baseurl }}/" style="padding-top: 10px; padding-bottom: 10px;">Home</a></li>
+            <ul class="lefthead">
+              <li><a class="active" href="{{ site.baseurl }}/" style="padding-top: 10px; padding-bottom: 10px;font-weight:normal">Home</a></li>
               <li><a href="{{ site.baseurl }}/" style="padding-top: 10px; padding-bottom: 10px">Blog</a></li>
               <li><a style="padding-top: 10px; padding-bottom: 10px" href="{{ site.baseurl }}/about">About</a></li>
-              <div class='header-icons' style="float: right; margin-right: 18%; margin-top: 3px;">
+              <div class='header-icons righthead2' style="float: right; margin-top: 3px;">
                 <a href="https://www.facebook.com/{{ site.footer-links.facebook }}"><i class="fa fa-facebook myicons" aria-hidden="true" style="color: black; font-size: 1.2em;"></i></a>
                 <a href="https://github.com/{{ site.footer-links.github }}"><i class="fa fa-github myicons"  style="color: black; font-size: 1.2em;"></i></a>
                 <a href="https://www.twitter.com/{{ site.footer-links.twitter }}"><i class=" fa fa-twitter myicons"  style="color: black; font-size: 1.2em;"></i></a>
@@ -74,6 +70,22 @@
       </div>
     </div>
 
+    <div class="info" style="width: 100%;">
+      <div class="main-content">
+        <br><br>
+        <p style="font-weight: bold;color:rgba(255,255,255,1);text-transform: uppercase;vertical-align: baseline;text-align: center;line-height: 1.14em;font-size:88px; font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';">
+          EXEBIT 2018
+        </p>
+        <p style="text-transform: uppercase; color: #38C098; text-align: center;line-height: 1.46em; letter-spacing: normal; font-size: 24px; font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';">
+          EXPERIENCE THE FUTURE OF COMPUTER SCIENCE HERE IN <br>
+          IITM
+        </p>
+        <p style="color: rgba(255,255,255,1); text-align: center;line-height: 1.55em; letter-spacing: normal; font-size: 16px;font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';font-style: normal;font-variant-ligatures: normal;font-variant-caps: normal;font-variant-numeric: normal;font-variant-east-asian: normal;font-weight: normal;font-stretch: normal;">
+          Exebit is the annual festival of the Computer Science and Engineering department at IIT Madras. Students at IIT Madras constantly innovate and have known to bring developments in technology. In the big data era, we see that Computer Science plays a pivotal role in the development of technology and is currently a fast-growing field. For example, the recommendations a person gets when he visits an e-commerce website is according to what he has bought previously. These recommendations are based on applications from Machine Learning. It is also necessary that the analyzed data is stored securely, which are based on Cryptography and Systems Security.
+        </p>
+        <br><br>
+      </div>
+    </div>
 
     <div id="main" role="main" class="container">
       {{ content }}
@@ -87,7 +99,8 @@
             Contact information:1234432112<br>
             Indian Institute of Technology Madras
           </div>
-          <div>
+
+          <div style="margin-top: 10px; color: white;">
             {% include svg-icons.html %}
           </div>
 

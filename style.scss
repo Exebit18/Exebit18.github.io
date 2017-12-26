@@ -192,12 +192,20 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  //color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
+  font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';
+  //font-weight: 300;
+  //font-size: 28px;
   letter-spacing: 1px;
+
+  font-weight: bold;
+  color: rgba(66,72,79,1);
+  text-align: left;
+line-height: 1.25em;
+font-size: 32px;
+
+
 }
 
 .site-description {
@@ -218,6 +226,8 @@ img {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';
+    font-style: normal;
 }
 
 li {
@@ -235,6 +245,9 @@ li a {
 li a:hover {
     /*background-color: #5cc198;*/
 }
+.active{
+  font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';
+}
 }
 
 
@@ -242,7 +255,7 @@ li a:hover {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';
   font-size: 18px;
   line-height: 1.55em;
 
@@ -261,6 +274,7 @@ nav {
     color:rgba(66,72,79,1);
     letter-spacing: 1px;
     font-size: 15px;
+    font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';
 
     @include mobile {
       margin: 0 10px;
@@ -306,8 +320,8 @@ font-size: 25px;
             float: left;
             padding: 20px 30px;
             line-height: 1.6;
-            font-size: 16px;
-            font-family: arial,helvetica,sans-serif;
+            //font-size: 16px;
+            //font-family: arial,helvetica,sans-serif;
             /*background-color: #fff;*/
             /*box-shadow: 0 1px 2px rgba(0,0,0,0.4),0 0 30px rgba(10,10,0,0.1) inset;*/
             >h1 {
@@ -316,12 +330,16 @@ font-size: 25px;
             a:not([title]){
                 word-break: break-all;
                 color: rgba(66,72,79,1);
-
+                font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';
+                font-weight: normal ;
+                font-style: normal;
+                font-size: 32px;
             }
             ul {
                 >h2 {
                     margin-left: -40px;
                     color: #6a6b6b;
+                    font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';
                 }
                 li {
                     line-height: 1.8;
@@ -335,7 +353,7 @@ font-size: 25px;
                     font-stretch: normal;
                     font-size: 16px;
                     line-height: 1.55em;
-                    font-family: avenir-lt-w01_35-light1475496, sans-serif;
+                    font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';
                     time {
                         display: inline-block;
                         width: 135px;
@@ -344,6 +362,7 @@ font-size: 25px;
                         font-weight: bold;
                         color: #223253;
                         transition: 0.3s ease;
+                        font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';
                         &:hover {
                             color: #4d6dad;
                         }
@@ -362,10 +381,14 @@ font-size: 25px;
                             color: #fff;
                             font-size: 90%;
                             transition: 0.3s ease;
+                            font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';
                             &:hover {
                                 background-color: #b6b6b9;
                             }
                         }
+                    }
+                    .excerpt{
+                      font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';
                     }
                     .pageTag {
                         i {
@@ -380,6 +403,7 @@ font-size: 25px;
                             color: #fff;
                             font-size: 90%;
                             transition: 0.3s ease;
+                            font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';
                             &:hover {
                                 background-color: #c0ddc7;
                             }
@@ -431,11 +455,11 @@ font-size: 25px;
                 font-stretch: normal;
                 font-size: 20px;
                 line-height: 1.5em;
-                font-family: avenir-lt-w01_35-light1475496, sans-serif;
+                font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';
             }
             a {
                 color: rgba(66,72,79,1);;
-                font-style: normal;
+                font-style: bold;
                 font-variant-ligatures: normal;
                 font-variant-caps: normal;
                 font-variant-numeric: normal;
@@ -444,7 +468,7 @@ font-size: 25px;
                 font-stretch: normal;
                 font-size: 20px;
                 line-height: 1.5em;
-                font-family: avenir-lt-w01_35-light1475496, sans-serif;
+                font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';
                 transition: 0.5s ease;
                 &:hover {
                     color: #223253;
@@ -512,7 +536,7 @@ footer  {
   background-color: #42484f;
   color:rgba(255,255,255,1);
   font-size: 16px;
-  font-family: Arial,Helvetica,sans-serif;
+  font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';
   line-height: 1.55em;
 }
 
@@ -522,9 +546,89 @@ footer  {
   background-color: #20303c;
   color: white;
   font-size: 14px;
-  font-family: Arial,Helvetica,sans-serif;
+  font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';
   line-height: 1.55em;
 }
+
+.myicons {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.5em;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
+
+.header-icons{
+  color: black !important;
+}
+
+.mybtn {
+  border-radius: 20px !important;
+  background-color: rgba(56, 192, 152, 1) !important;
+  color: white !important;
+  font-size: 1em !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  border: 1px solid rgba(56, 192, 152, 1);
+}
+
+.mybtn:hover {
+  border-radius: 20px !important;
+  background-color: lightgrey !important;
+  color: rgba(56, 192, 152, 1) !important;
+  font-size: 1em !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  border: 1px solid lightgrey;
+}
+
+.lefthead {
+  margin-left: 15% !important;
+}
+
+.righthead {
+  margin-right: 15% !important;
+  font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 16px;
+}
+
+.righthead2 {
+  margin-right: 18% !important;
+}
+
+.main-content {
+  width: 60%;
+  margin: auto;
+}
+
+@media (max-width: 850px) {
+  .lefthead {
+    margin-left: 5% !important;
+  }
+
+  .righthead {
+    margin-right: 5% !important;
+  }
+
+  .righthead2 {
+    margin-right: 5% !important;
+  }
+
+  .main-content {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+
+/*Stupid file doesnt regen*/
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
