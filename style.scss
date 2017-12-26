@@ -192,12 +192,20 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  //color: $darkGray;
   cursor: pointer;
   font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
+  //font-weight: 300;
+  //font-size: 28px;
   letter-spacing: 1px;
+
+  font-weight: bold;
+  color: rgba(66,72,79,1);
+  text-align: left;
+line-height: 1.25em;
+font-size: 32px;
+
+
 }
 
 .site-description {
@@ -306,8 +314,8 @@ font-size: 25px;
             float: left;
             padding: 20px 30px;
             line-height: 1.6;
-            font-size: 16px;
-            font-family: arial,helvetica,sans-serif;
+            //font-size: 16px;
+            //font-family: arial,helvetica,sans-serif;
             /*background-color: #fff;*/
             /*box-shadow: 0 1px 2px rgba(0,0,0,0.4),0 0 30px rgba(10,10,0,0.1) inset;*/
             >h1 {
@@ -316,7 +324,10 @@ font-size: 25px;
             a:not([title]){
                 word-break: break-all;
                 color: rgba(66,72,79,1);
-
+                font-family: 'Nunito Sans script=all rev=1', sans-serif;
+                font-weight: 10;
+                font-style: normal;
+                font-size: 32px;
             }
             ul {
                 >h2 {
@@ -527,7 +538,7 @@ footer  {
 }
 
 .myicons {
-  padding-top: 10px; 
+  padding-top: 10px;
   padding-bottom: 10px;
   font-size: 1.5em;
   margin-left: 10px;
@@ -543,7 +554,7 @@ footer  {
   border-radius: 20px !important;
   background-color: rgba(56, 192, 152, 1) !important;
   color: white !important;
-  font-size: 1em !important; 
+  font-size: 1em !important;
   padding-left: 15px !important;
   padding-right: 15px !important;
   border: 1px solid rgba(56, 192, 152, 1);
@@ -553,9 +564,9 @@ footer  {
   border-radius: 20px !important;
   background-color: lightgrey !important;
   color: rgba(56, 192, 152, 1) !important;
-  font-size: 1em !important; 
+  font-size: 1em !important;
   padding-left: 15px !important;
-  padding-right: 15px !important;  
+  padding-right: 15px !important;
   border: 1px solid lightgrey;
 }
 
@@ -565,6 +576,14 @@ footer  {
 
 .righthead {
   margin-right: 15% !important;
+  font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 16px;
 }
 
 .righthead2 {
@@ -572,7 +591,7 @@ footer  {
 }
 
 .main-content {
-  width: 60%; 
+  width: 60%;
   margin: auto;
 }
 
@@ -591,7 +610,7 @@ footer  {
 
   .main-content {
     width: 90%;
-    margin: auto; 
+    margin: auto;
   }
 }
 

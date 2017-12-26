@@ -9,10 +9,19 @@ layout: default_home
 	<div class="left">
 		{% for post in site.posts %}
 			<div>
-				<h2 style="font-size: 32px; line-height: 1.25em; font-family: avenir-lt-w01_35-light1475496,sans-serif; margin-bottom: 0px;">
+				<h2 style="margin-bottom: 0px;">
                   <a class="post-link" href="{{ site.baseurl }}{{ post.url }} ">{{ post.title }}</a>
                 </h2>
-                <span style="font-style: italic; color: grey;">{{ post.date | date: "%B %-d, %Y" }}</span>
+                <span style="font-style: italic;font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 16px;
+    line-height: 1.55em;
+    font-family: avenir-lt-w01_35-light1475496, sans-serif;
+    color: rgba(66,72,79,1);">{{ post.date | date: "%B %-d, %Y" }}</span>
 				<br><br>
 				<div class="excerpt" >
                     {{ post.excerpt | truncatewords: 25}}
@@ -28,14 +37,33 @@ layout: default_home
 		<br>
 
 		<div class="side">
-            <div style="font-size:20px; border-bottom: 2px solid #eeeeef; padding-left: 0px; padding-bottom: 7px;">
+            <div style="font-size:20px; border-bottom: 2px solid #eeeeef; padding-left: 0px; padding-bottom: 7px; color: rgba(66,72,79,1);">
                 Recent Posts
             </div>
             <div>
                 {% for post in site.posts offset: 0 limit: 10  %}
                     <div>
-                    	<a href="{{ site.baseurl }}{{ post.url }}" style="font-size: 0.8em;">{{ post.title }}</a>
-                		<br><span style="font-style: italic; color: grey; font-size: 0.7em;">{{ post.date | date: "%B %-d, %Y" }}</span>
+                    	<a href="{{ site.baseurl }}{{ post.url }}" style="font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 20px;
+    line-height: 1.5em;
+    font-family: avenir-lt-w01_35-light1475496, sans-serif;
+    color: rgba(66,72,79,1);">{{ post.title }}</a>
+                		<br><span style="font-style: italic; font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 16px;
+    line-height: 1.55em;
+    font-family: avenir-lt-w01_35-light1475496, sans-serif;
+    color: rgba(66,72,79,1);">{{ post.date | date: "%B %-d, %Y" }}</span>
                 	</div>
             		<br>
                 {% endfor %}
@@ -43,7 +71,7 @@ layout: default_home
         </div>
         <br>
 		<div class="side">
-			<div style="font-size:20px; border-bottom: 2px solid #eeeeef; padding-left: 0px; padding-bottom: 7px;">
+			<div style="font-size:20px; border-bottom: 2px solid #eeeeef; padding-left: 0px; padding-bottom: 7px; color: rgba(66,72,79,1);">
 				Categories
 			</div>
 			<div style="padding-top: 10px;">
