@@ -1,15 +1,14 @@
 ---
 layout: page
-title: About
+title: Contact Us
 permalink: /about/
 ---
 
-Some information about you!
+We're the WebOps team for Exebit-2018.
 
-### More Information
+<br>
+<br>
 
-A place to include any other types of information that you'd like to include about yourself.
+### For hugs or bugs:
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[exebit@cse.iitm.ac.in](mailto:exebit@cse.iitm.ac.in)

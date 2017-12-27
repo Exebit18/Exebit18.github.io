@@ -1,64 +1,20 @@
 ---
-layout: default_home
+layout: default
+is_home: True
 ---
 
-<br>
-
-<div class="posts clearfix">
-
-	<div class="left">
-		{% for post in site.posts %}
-			<div>
-				<h2 style="margin-bottom: 0px;">
-                  <a class="post-link" href="{{ site.baseurl }}{{ post.url }} ">{{ post.title }}</a>
-                </h2>
-                <span style="font-style: italic;font-variant-ligatures: normal;font-variant-caps: normal;font-variant-numeric: normal;font-variant-east-asian: normal;font-weight: normal;font-stretch: normal;font-size: 16px;line-height: 1.55em;font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';	color: rgba(66,72,79,1);">{{ post.date | date: "%B %-d, %Y" }}</span>
-				<br><br>
-				<div class="excerpt" style="font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed'; font-size:16px;">
-                    {{ post.excerpt | truncatewords: 25}}
-                </div>
-
-				<div class ="btn btn-default mybtn" onclick="window.location.href='{{ site.baseurl }}{{ post.url }}'" style="margin-top: 10px;font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed'; font-size:16px;">Read More</div>
-			</div>
-			<br>
-		{% endfor %}
-	</div>
-
-	<div class="right">
-		<br>
-
-		<div class="side">
-            <div style="font-size:20px; border-bottom: 2px solid #eeeeef; padding-left: 0px; padding-bottom: 7px; color: rgba(66,72,79,1);">
-                Recent Posts
-            </div>
-            <div>
-                {% for post in site.posts offset: 0 limit: 10  %}
-                    <div>
-                    	<a href="{{ site.baseurl }}{{ post.url }}" style="font-style: normal;font-variant-ligatures: normal;font-variant-caps: normal;font-variant-numeric: normal;font-variant-east-asian: normal;font-weight: normal;font-stretch: normal;font-size: 20px;line-height: 1.5em;font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';color: rgba(66,72,79,1);">{{ post.title }}</a>
-                		<br><span style="font-style: italic; font-variant-ligatures: normal;font-variant-caps: normal;font-variant-numeric: normal;font-variant-east-asian: normal;font-weight: normal;font-stretch: normal;font-size: 16px;line-height: 1.55em;font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';color: rgba(66,72,79,1);">{{ post.date | date: "%B %-d, %Y" }}</span>
-                	</div>
-            		<br>
-                {% endfor %}
-            </div>
+{% for post in site.posts %}
+	<div>
+		<h2 style="margin-bottom: 0px;">
+          <a class="post-link" href="{{ site.baseurl }}{{ post.url }} ">{{ post.title }}</a>
+        </h2>
+        <span style="font-style: italic;font-variant-ligatures: normal;font-variant-caps: normal;font-variant-numeric: normal;font-variant-east-asian: normal;font-weight: normal;font-stretch: normal;font-size: 16px;line-height: 1.55em;font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';	color: rgba(66,72,79,1);">{{ post.date | date: "%B %-d, %Y" }}</span>
+		<br><br>
+		<div class="excerpt" style="font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed'; font-size:16px;">
+            {{ post.excerpt | truncatewords: 25}}
         </div>
-        <br>
-		<div class="side">
-			<div style="font-size:20px; border-bottom: 2px solid #eeeeef; padding-left: 0px; padding-bottom: 7px; color: rgba(66,72,79,1);">
-				Categories
-			</div>
-			<div style="padding-top: 10px;">
-				{% for category in site.categories %}
-				<div>
-					<a href="{{ site.baseurl }}/category/{{ category | first }}" >
-						<span class="badge">{{ category | last | size }}</span>
-						<span class="name" style="font-size: 0.7em; font-style: italic;">
-							{{ category | first }}
-						</span>
-					</a>
-				</div>
-				{% endfor %}
-			</div>
-		</div>
-	</div>
 
-</div>
+		<div class ="btn btn-default mybtn" onclick="window.location.href='{{ site.baseurl }}{{ post.url }}'" style="margin-top: 10px;font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed'; font-size:16px;">Read More</div>
+	</div>
+	<br>
+{% endfor %}
