@@ -11,11 +11,12 @@ is_home: False
         </h2>
         <span style="font-style: italic;font-variant-ligatures: normal;font-variant-caps: normal;font-variant-numeric: normal;font-variant-east-asian: normal;font-weight: normal;font-stretch: normal;font-size: 16px;line-height: 1.55em;font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';	color: rgba(66,72,79,1);">{{ post.date | date: "%B %-d, %Y" }}</span>
 		<br><br>
-		<div class="excerpt" style="font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed'; font-size:16px;">
+		<div class="excerpt" style="font-family: 'Raleway', sans-serif; font-size:16px;">
             {{ post.excerpt | truncatewords: 25}}
         </div>
 
-		<div class ="btn btn-default mybtn" onclick="window.location.href='{{ site.baseurl }}{{ post.url }}'" style="margin-top: 10px;font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed'; font-size:16px;">Read More</div>
+		<div class ="btn btn-default mybtn" onclick="window.location.href='{{ site.baseurl }}{{ post.url }}'" style="margin-top: 10px;font-family: 'Raleway', sans-serif; font-size:16px;">Read More</div>
 	</div>
 	<br>
+	<br>	
 {% endfor %}

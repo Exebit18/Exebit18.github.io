@@ -229,28 +229,30 @@ font-size: 32px;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
-}
+  }
 
-li {
-    float: left;
-}
+  li {
+      float: left;
+  }
 
-li a {
-    display: block;
-    color: #42484F;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
+  li a {
+      display: block;
+      color: #42484F;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
 
-li a:hover {
-    /*background-color: #5cc198;*/
-}
-.active{
-  font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';
-}
+  li a:hover {
+      /*background-color: #5cc198;*/
+  }
+ 
+  .active{
+    font-family: 'Raleway', sans-serif;
+    /*background: #cecece;*/
+  }
 }
 
 
@@ -333,7 +335,7 @@ font-size: 25px;
             a:not([title]){
                 word-break: break-all;
                 color: rgba(66,72,79,1);
-                font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';
+                font-family: 'Lobster', cursive;
                 font-weight: normal ;
                 font-style: normal;
                 font-size: 32px;
@@ -471,7 +473,7 @@ font-size: 25px;
                 font-stretch: normal;
                 font-size: 20px;
                 line-height: 1.5em;
-                font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';
+                font-family: 'Raleway', sans-serif;
                 transition: 0.5s ease;
                 &:hover {
                     color: #223253;
@@ -539,7 +541,7 @@ footer  {
   background-color: #42484f;
   color:rgba(255,255,255,1);
   font-size: 16px;
-  font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';
+  font-family: Raleway, sans-serif;
   line-height: 1.55em;
 }
 
@@ -549,7 +551,7 @@ footer  {
   background-color: #20303c;
   color: white;
   font-size: 14px;
-  font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';
+  font-family: Raleway, sans-serif;
   line-height: 1.55em;
 }
 
@@ -648,6 +650,12 @@ footer  {
 
   .site-avatar {
     margin-left: 40% !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    max-width: 100% !important;
   }
 }
 

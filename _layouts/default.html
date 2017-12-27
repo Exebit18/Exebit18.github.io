@@ -4,8 +4,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet">
+    
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
-
     {% include meta.html %}
 
     <!--[if lt IE 9]>
@@ -83,7 +84,7 @@
           EXPERIENCE THE FUTURE OF COMPUTER SCIENCE HERE IN <br>
           IITM
         </p>
-        <p style="color: rgba(255,255,255,1); text-align: center;line-height: 1.55em; letter-spacing: normal; font-size: 16px;font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';font-style: normal;font-variant-ligatures: normal;font-variant-caps: normal;font-variant-numeric: normal;font-variant-east-asian: normal;font-weight: normal;font-stretch: normal;">
+        <p style="color: rgba(255,255,255,1); text-align: center;line-height: 1.55em; letter-spacing: normal; font-size: 16px;font-family: 'Raleway', sans-serif;font-style: normal;font-variant-ligatures: normal;font-variant-caps: normal;font-variant-numeric: normal;font-variant-east-asian: normal;font-weight: normal;font-stretch: normal;">
           Exebit is the annual festival of the Computer Science and Engineering department at IIT Madras. Students at IIT Madras constantly innovate and have known to bring developments in technology. In the big data era, we see that Computer Science plays a pivotal role in the development of technology and is currently a fast-growing field. For example, the recommendations a person gets when he visits an e-commerce website is according to what he has bought previously. These recommendations are based on applications from Machine Learning. It is also necessary that the analyzed data is stored securely, which are based on Cryptography and Systems Security.
         </p>
         <br><br>
@@ -107,7 +108,7 @@
                   <div>
                       {% for post in site.posts offset: 0 limit: 10  %}
                           <div>
-                            <a href="{{ site.baseurl }}{{ post.url }}" style="font-style: normal;font-variant-ligatures: normal;font-variant-caps: normal;font-variant-numeric: normal;font-variant-east-asian: normal;font-weight: normal;font-stretch: normal;font-size: 20px;line-height: 1.5em;font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';color: rgba(66,72,79,1);">{{ post.title }}</a>
+                            <a href="{{ site.baseurl }}{{ post.url }}" style="font-style: normal;font-variant-ligatures: normal;font-variant-caps: normal;font-variant-numeric: normal;font-variant-east-asian: normal;font-weight: normal;font-stretch: normal;font-size: 20px;line-height: 1.5em;font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';color: rgba(66,72,79,1);font-style: bold">{{ post.title }}</a>
                           <br><span style="font-style: italic; font-variant-ligatures: normal;font-variant-caps: normal;font-variant-numeric: normal;font-variant-east-asian: normal;font-weight: normal;font-stretch: normal;font-size: 16px;line-height: 1.55em;font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';color: rgba(66,72,79,1);">{{ post.date | date: "%B %-d, %Y" }}</span>
                         </div>
                       <br>
