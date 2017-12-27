@@ -12,22 +12,13 @@ layout: default_home
 				<h2 style="margin-bottom: 0px;">
                   <a class="post-link" href="{{ site.baseurl }}{{ post.url }} ">{{ post.title }}</a>
                 </h2>
-                <span style="font-style: italic;font-variant-ligatures: normal;
-    font-variant-caps: normal;
-    font-variant-numeric: normal;
-    font-variant-east-asian: normal;
-    font-weight: normal;
-    font-stretch: normal;
-    font-size: 16px;
-    line-height: 1.55em;
-    font-family: avenir-lt-w01_35-light1475496, sans-serif;
-    color: rgba(66,72,79,1);">{{ post.date | date: "%B %-d, %Y" }}</span>
+                <span style="font-style: italic;font-variant-ligatures: normal;font-variant-caps: normal;font-variant-numeric: normal;font-variant-east-asian: normal;font-weight: normal;font-stretch: normal;font-size: 16px;line-height: 1.55em;font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';	color: rgba(66,72,79,1);">{{ post.date | date: "%B %-d, %Y" }}</span>
 				<br><br>
-				<div class="excerpt" >
+				<div class="excerpt" style="font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed'; font-size:16px;">
                     {{ post.excerpt | truncatewords: 25}}
                 </div>
 
-				<div class ="btn btn-default mybtn" onclick="window.location.href='{{ site.baseurl }}{{ post.url }}'" style="margin-top: 10px;">Read More</div>
+				<div class ="btn btn-default mybtn" onclick="window.location.href='{{ site.baseurl }}{{ post.url }}'" style="margin-top: 10px;font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed'; font-size:16px;">Read More</div>
 			</div>
 			<br>
 		{% endfor %}
@@ -43,27 +34,8 @@ layout: default_home
             <div>
                 {% for post in site.posts offset: 0 limit: 10  %}
                     <div>
-                    	<a href="{{ site.baseurl }}{{ post.url }}" style="font-style: normal;
-    font-variant-ligatures: normal;
-    font-variant-caps: normal;
-    font-variant-numeric: normal;
-    font-variant-east-asian: normal;
-    font-weight: normal;
-    font-stretch: normal;
-    font-size: 20px;
-    line-height: 1.5em;
-    font-family: avenir-lt-w01_35-light1475496, sans-serif;
-    color: rgba(66,72,79,1);">{{ post.title }}</a>
-                		<br><span style="font-style: italic; font-variant-ligatures: normal;
-    font-variant-caps: normal;
-    font-variant-numeric: normal;
-    font-variant-east-asian: normal;
-    font-weight: normal;
-    font-stretch: normal;
-    font-size: 16px;
-    line-height: 1.55em;
-    font-family: avenir-lt-w01_35-light1475496, sans-serif;
-    color: rgba(66,72,79,1);">{{ post.date | date: "%B %-d, %Y" }}</span>
+                    	<a href="{{ site.baseurl }}{{ post.url }}" style="font-style: normal;font-variant-ligatures: normal;font-variant-caps: normal;font-variant-numeric: normal;font-variant-east-asian: normal;font-weight: normal;font-stretch: normal;font-size: 20px;line-height: 1.5em;font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';color: rgba(66,72,79,1);">{{ post.title }}</a>
+                		<br><span style="font-style: italic; font-variant-ligatures: normal;font-variant-caps: normal;font-variant-numeric: normal;font-variant-east-asian: normal;font-weight: normal;font-stretch: normal;font-size: 16px;line-height: 1.55em;font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';color: rgba(66,72,79,1);">{{ post.date | date: "%B %-d, %Y" }}</span>
                 	</div>
             		<br>
                 {% endfor %}
