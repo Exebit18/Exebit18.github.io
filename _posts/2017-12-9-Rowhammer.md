@@ -1,7 +1,7 @@
 ---
 layout : post
 title : About Rowhammer
-category : [CyberSecurity,]
+category : ['Systems Security',]
 ---
 
 Rowhammer is an unintended side effect in dynamic random-access memory (DRAM) that causes memory cells to leak their charges and interact electrically between themselves. This could possibly alter the contents of nearby memory rows that were not addressed in the original memory access. The main cause of this attack happens to be the high cell density in modern DRAM, and the attack can be triggered by specially crafted memory access patterns that rapidly activate the same memory rows numerous times. It enables an attacker to cause bit flips in DRAM by issuing only read requests to a modern DRAM. 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Monte Carlo Estimation of Pi
-category: [PythonOneLiners, MonteCarlo]
+category: ['Python One Liners', 'Monte Carlo']
 ---
 
 Here's a simple python function to estimate value of pi by sampling from uniform distributions:

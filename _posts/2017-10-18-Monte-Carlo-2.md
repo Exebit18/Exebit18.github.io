@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Monte Carlo Estimation of e
-category: [MonteCarlo, ]
+category: ['Monte Carlo', ]
 ---
 
 Here's a simple python function to estimate value of e by sampling from uniform distributions:
