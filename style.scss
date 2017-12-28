@@ -659,6 +659,12 @@ footer  {
   }
 }
 
+.entry {
+  a {
+    font-size: 17px !important;
+  }
+}
+
 /*Stupid file doesnt regen*/
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
