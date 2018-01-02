@@ -17,7 +17,7 @@ Further, let’s inscribe a circle in a square. If the length of the side of the
 
 Now, we divide the area of the circle with the area of the square
 
-![The fraction]({{"/images/rowhammerimg1.jpg"}})
+![The fraction]({{"/images/two_areas.jpg"}})
 
 If we multiply this fraction by four, we get the value of 'π'.
 
