@@ -4,24 +4,13 @@ title: Monte Carlo Estimation of Pi
 category: ['Python One Liners', 'Monte Carlo']
 ---
 
-## Computation of Pi
-If you don’t know what 'π' is, it is that number which has something to do with circles. More precisely, the area of the disk with the radius 'r' is equal to 'π * r^2'.
+![The area of the disk]({{"/images/area_circle.jpg"}}) ![Inscribed circle in the square]({{"/images/inscribed_circle.jpg"}})
 
-![The area of the disk]({{"/images/area_circle.jpg"}})
-
-If the radius of the circle is equal to one, then the area of the disk is equal to 'π'.
-
-Further, let’s inscribe a circle in a square. If the length of the side of the square is equal to two, then the radius of the inscribed circle is equal to one.
-
-![Inscribed circle in the square]({{"/images/inscribed_circle.jpg"}})
-
-Now, we divide the area of the circle with the area of the square
+The fraction of area of circle by the area of square multiplied by four gives the value of 'π'.
 
 ![The fraction]({{"/images/two_areas.jpg"}})
 
-If we multiply this fraction by four, we get the value of 'π'.
-
-A simple way to compute the fraction is to generate the points in the square and count the number of points which lie in the inside of the circle.
+A simple way to compute this fraction is to generate the points in the square and count the number of points which lie in the inside of the circle.
 
 ![Points in the square]({{"/images/generate_points_pi.jpg"}})
 
