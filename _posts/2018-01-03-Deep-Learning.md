@@ -36,7 +36,7 @@ In 1943, Mcculloch and Pitts proposed a mathematical functional unit which was l
 Note that using the threshold unit makes the the effective function computed non-differentiable. We need differentiable functions ideally, as they have some important properties (out of the scope of this blog) for optimising. Hence we use a simple fix. We employ a soft thresholds such as tanh or sigmoid functions which look as follows.
 
 <p>
-<img src="/images/plot1.jpg" width="425"/> <img src="/images/plot2.jpg" width="425"/>
+<img src="/images/plot1.jpg" width="300"/> <img src="/images/plot2.jpg" width="300"/>
 </p>
 
 
