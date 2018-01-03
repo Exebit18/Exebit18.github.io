@@ -13,41 +13,38 @@ Deep learning has become an ubiquitous tool in the Machine Learning community. T
 
 The human brain is essentially a network of billions of neurons that are interconnected in a complex network. A neuron is the basic functional unit of the brain. Each neuron takes inputs, in the form of electrical signals, from other neurons through the synaptic connections to the dendrites. The body of the neuron cell performs some operation (usually a simple aggregation) on these received inputs and outputs the result through the axon in form of an activation (through a spiking in potential) of the neuron. The outline of the neuron is shown below:  
 
-
-
+<br>
 ![Biological neuron]({{"/images/bioneuron.jpg"}})
-
-
+<br><br>
 
 ## Artificial Neuron
 
 In 1943, Mcculloch and Pitts proposed a mathematical functional unit which was loosely inspired from the above neural structure. The artificial neuron was intended to be an approximation to the biological neuron. An artificial neuron takes m inputs and outputs a boolean value. Output 1 corresponds to an activation in the neuron and 0 corresponds to no activation. The unit can be mathematically represented as a weighted sum of the inputs, followed by a threshold function:
 
+<br>
 <p style="text-align: center;">
 <img src="/images/signum.jpg" align="center">
 </p>
-
-
+<br>
 
 ![Artificial neuron]({{"/images/artificialneuron.jpg"}})
-
-
+<br><br>
 
 Note that using the threshold unit makes the the effective function computed non-differentiable. We need differentiable functions ideally, as they have some important properties (out of the scope of this blog) for optimising. Hence we use a simple fix. We employ a soft thresholds such as tanh or sigmoid functions which look as follows.
 
+<br>
 <p>
-<img src="/images/plot2.jpg" width="300"/> <img src="/images/plot1.jpg" width="300"/>
+<img src="/images/plot2.jpg" width="48%"/> <img src="/images/plot1.jpg" width="50%"/>
 </p>
-
-
+<br>
 
 ## Artificial Neural Network
 
 So far, we have seen how an artificial neuron works. But one neuron on it’s own is pretty limited when it comes to hard tasks like image classification etc. This is achieved by stacking these neurons in layers. The output of one layer of neurons acts as the input to the next layer, just like our brain (loosely speaking).
 
-
-
+<br>
 ![Artificial neural network]({{"/images/neuralnetwork.jpg"}})
+<br><br>
 
 
 
@@ -108,5 +105,5 @@ print("Accuracy: %.2f%%" % (scores[1]*100))
 
 
 ## Further References:
-1. MOOC : [click here](https://www.coursera.org/specializations/deep-learning)
-2. For latest research in deep learning: [click here](http://deeplearning.net/)
+1. [Coursera](https://www.coursera.org/specializations/deep-learning)
+2. Latest research in [deep learning](http://deeplearning.net/)
