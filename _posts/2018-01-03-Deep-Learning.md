@@ -1,7 +1,7 @@
 ---
 layout : post
 title : Deep Learning: Introduction
-category : ['Systems Security',]
+category : ['Deep Learning',]
 ---
 
 
