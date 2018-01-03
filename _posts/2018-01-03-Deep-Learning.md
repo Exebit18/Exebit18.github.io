@@ -69,7 +69,7 @@ Training the network using many such training examples, gives us the values of t
 
 We now write some code in python to train our very own neural network! The task is to classify a given 28*28 images of handwritten digits into one of 10 classes. We will use a library called keras for this tutorial. For installation see this. Experiment with the hidden layer size, number of epochs and batch size.
 
-```python
+`python
 import numpy
 from keras.datasets import mnist
 from keras.models import Sequential
@@ -100,7 +100,7 @@ model.fit(XTrain, YTrain, validation_data=(XTest, YTest), epochs=10, batch_size=
 # Check for accuracy
 scores = model.evaluate(XTest, YTest, verbose=0)
 print("Accuracy: %.2f%%" % (scores[1]*100))
-```
+`
 
 
 
