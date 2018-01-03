@@ -17,7 +17,9 @@ The human brain is essentially a network of billions of neurons that are interco
 
 In 1943, Mcculloch and Pitts proposed a mathematical functional unit which was loosely inspired from the above neural structure. The artificial neuron was intended to be an approximation to the biological neuron. An artificial neuron takes m inputs and outputs a boolean value. Output 1 corresponds to an activation in the neuron and 0 corresponds to no activation. The unit can be mathematically represented as a weighted sum of the inputs, followed by a threshold function:
 
-![signum]({{"/images/signum.jpg"}})
+<p style="text-align: center;">
+<img src="/images/signum.jpg" align="center">
+</p>
 
 ![Artificial neuron]({{"/images/artificialneuron.jpg"}})
 
