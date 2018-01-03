@@ -6,7 +6,7 @@ category: ['Python One Liners', 'Monte Carlo']
 
 This blogpost provides a way to calculate the approximate value of pi using the Monte Carlo method.
 
-![The area of the disk]({{"/images/area_circle.jpg"}}) ![Inscribed circle in the square]({{"/images/inscribed_circle.jpg"}})
+![Inscribed circle in the square]({{"/images/inscribed_circle.jpg"}})
 
 The fraction of area of circle by the area of square multiplied by four gives the value of 'π'.
 
