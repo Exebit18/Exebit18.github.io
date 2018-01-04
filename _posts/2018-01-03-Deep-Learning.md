@@ -5,7 +5,7 @@ category : ['Deep Learning',]
 ---
 
 
-Deep learning has become an ubiquitous tool in the Machine Learning community. Today a lot of smart and intelligent applications such as self-driving cars, games engines such as Alpha-Go, face-detection & identification etc all use deep learning to achieve superhuman performance.   This technology works by arranging units called neurons in layers. Each layer takes input from the previous layer, applies some transformations on that input and feeds it to the next layer. In this post, we will cover the basics principles behind deep learning and also take a hands-on approach to write some code to classify handwritten digits.
+Deep learning has become an ubiquitous tool in the Machine Learning community. Today a lot of smart and intelligent applications such as self-driving cars, games engines such as Alpha-Go, face-detection & identification etc all use deep learning to achieve superhuman performance. This technology works by arranging units called neurons in layers. Each layer takes input from the previous layer, applies some transformations on that input and feeds it to the next layer. In this post, we will cover the basics principles behind deep learning and also take a hands-on approach to write some code to classify handwritten digits.
 
 
 
@@ -50,7 +50,7 @@ So far, we have seen how an artificial neuron works. But one neuron on it’s ow
 
 The network consists of an input layer which takes the input data, an output layer which returns the result of our algorithm, and an arbitrary number of intermediate layers called the hidden layers. Essentially, the network applies a series of transformations to the input and returns the final output. The number of neurons in the input layer is decided by the size of the input. The more number of hidden layers we have, the deeper the network. Typically using one hidden layer is sufficient for most tasks and having more will lead to a problem called over-fitting.
 
-The structure of the final layer depends on the task at hand. In our example, we want to classify handwritten digits. There are a total of 10 digits possible: 0-9. Hence our output layer is has 10 neurons each corresponding to a digit. Each output neuron must represent the probability that the given image corresponds to that digit. Since they represent probabilities, the sum of the outputs of these neurons must be 1. This condition is imposed by using something called the softmax function (which is also differentiable).  The network is trained via a number of runs on the train data. Each run over the entire data is called an epoch. At each training instant, we batch K datapoints together for faster convergence. This is called batch size.
+The structure of the final layer depends on the task at hand. In our example, we want to classify handwritten digits. There are a total of 10 digits possible: 0-9. Hence our output layer is has 10 neurons each corresponding to a digit. Each output neuron must represent the probability that the given image corresponds to that digit. Since they represent probabilities, the sum of the outputs of these neurons must be 1. This condition is imposed by using something called the softmax function (which is also differentiable). The network is trained via a number of runs on the train data. Each run over the entire data is called an epoch. At each training instant, we batch K datapoints together for faster convergence. This is called batch size.
 
 
 
