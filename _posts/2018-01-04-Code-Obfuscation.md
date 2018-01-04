@@ -58,7 +58,7 @@ void main(){
 	adder(8,17);
 }
 ```
-	Step 2: Change function name
+Step 2: Change function name
 ```
 #include <stdio.h>
 void divide(int divider, int divident){
@@ -69,7 +69,7 @@ void main(){
 	divide(8,17);
 }
 ```
-	Step 3: Represent 2 and 4 in other format.
+Step 3: Represent 2 and 4 in other format.
 ```  
 #include <stdio.h>
 void divide(int divider, int divident){
@@ -80,7 +80,7 @@ void main(){
 	divide(010,021);
 }
 ```
-	Step 4: Add irrelevant contents.
+Step 4: Add irrelevant contents.
 ```  
 #include <stdio.h>
 void divide(int divider, int divident){
