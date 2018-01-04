@@ -5,6 +5,11 @@ category: ['Monte Carlo', ]
 ---
 This blogpost provides a way to calculate the approximate value of e using the Monte Carlo method.
 
+## Strategy
+
+Calculating the value of e using this method requires you to generate random numbers unless the sum is more than one.
+Hence this experiment of generating random numbers in done n number of times(n usually large) and take the average of this successful generation by dividing the result with the total number of times random numbers are generated.
+
 ## Proof
 
 Let U be a random variable uniformly distributed in range (0,1) and Y be the minimum number of terms for U1+U2+⋯+UY>1, or expressed differently:
@@ -75,3 +80,7 @@ def get_e():
 
 print "e = ", get_e()
 ```
+
+## References:
+
+Post on [Stake Exchange](https://stats.stackexchange.com/questions/194352/why-does-the-number-of-continuous-uniform-variables-on-0-1-needed-for-their-su)
