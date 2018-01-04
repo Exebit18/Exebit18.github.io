@@ -7,8 +7,9 @@ This blogpost provides a way to calculate the approximate value of e using the M
 
 ## Strategy
 
-Calculating the value of e using this method requires you to generate random numbers unless the sum is more than one.
-Hence this experiment of generating random numbers in done n number of times(n usually large) and take the average of this successful generation by dividing the result with the total number of times random numbers are generated.
+Calculating the value of e using this method requires us to perform an experiment multiple times. In each experiment, we keep generating random numbers in [0,1] till their sum exceeds one. The number of times we generated random numbers is a guess for e. 
+
+This experiment is repeated n times (n is usually large) and we take the average of the guesses for e as our estimate.
 
 ## Proof
 
@@ -83,4 +84,4 @@ print "e = ", get_e()
 
 ## References:
 
-Post on [Stake Exchange](https://stats.stackexchange.com/questions/194352/why-does-the-number-of-continuous-uniform-variables-on-0-1-needed-for-their-su)
+1. Post on [Stack Exchange](https://stats.stackexchange.com/questions/194352/why-does-the-number-of-continuous-uniform-variables-on-0-1-needed-for-their-su)
