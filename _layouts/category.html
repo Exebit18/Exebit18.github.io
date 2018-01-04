@@ -7,7 +7,7 @@ is_home: False
 {% for post in site.categories[page.category] %}
 	<div>
 		<h2 style="margin-bottom: 0px;">
-          <a class="post-link" href="{{ site.baseurl }}{{ post.url }} ">{{ post.title }}</a>
+          <a class="post-link" href="{{ site.baseurl }}{{ post.url }} " style="font-size: 32px !important;">{{ post.title }}</a>
         </h2>
         <span style="font-style: italic;font-variant-ligatures: normal;font-variant-caps: normal;font-variant-numeric: normal;font-variant-east-asian: normal;font-weight: normal;font-stretch: normal;font-size: 16px;line-height: 1.55em;font-family: 'Nunito Sans script=all rev=1', 'Open Sans Condensed';	color: rgba(66,72,79,1);">{{ post.date | date: "%B %-d, %Y" }}</span>
 		<br><br>

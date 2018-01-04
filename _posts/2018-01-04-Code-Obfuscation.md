@@ -3,7 +3,8 @@ layout : post
 title : 'Code Obfuscation'
 category : ['Obfuscation',]
 ---
-This is a post on code obfuscation with an example to understand better.
+
+This blogpost introduces code obfuscation with an example.
 
 ## What?
 
@@ -29,82 +30,102 @@ Ex: void adder(), void multiplier() to void jiiingalala(), void jiingalala()
 
 Before we get our hands on reverse engineering the obfuscated code it’s essential to understand the obfuscation of the original code.
 
-Consider a simple program of adding two no.
+Consider a simple program of adding two numbers.
 
-<p style="text-style: bold;">
-Original code:
-</p>
-```
+#### Original code:
+
+```c
 #include <stdio.h>
+
 void adder(int var1, int var2){
-int sum = var1 + var 2;
-printf(“%d”,sum);
+    int sum = var1 + var2;
+    printf(“%d”, sum);
 }
+
 void main(){
-	adder(8,17);
+    adder(8, 17);
 }
 ```
+<br>
 
 Let’s obfuscate the above code with the simple important steps from above.
+<br><br>
+#### Step 1: Change variable names.
+```c
+#include <stdio.h>
 
-Step 1: Change variable names.
-```
-#include <stdio.h>
 void adder(int divider, int dividend){
-	int quotient = divider + divident;
-printf(“%d”,quotient);
+    int quotient = divider + dividend;
+    printf(“%d”, quotient);
 }
+
 void main(){
-	adder(8,17);
+    adder(8, 17);
 }
 ```
-Step 2: Change function name
-```
+<br>
+
+#### Step 2: Change function name
+
+```c
 #include <stdio.h>
-void divide(int divider, int divident){
-	int quotient = divider + divident;
-printf(“%d”,quotient);
+
+void divide(int divider, int dividend){
+    int quotient = divider + dividend;
+    printf(“%d”, quotient);
 }
+
 void main(){
-	divide(8,17);
+    divide(8, 17);
 }
 ```
-Step 3: Represent 2 and 4 in other format.
-```  
+<br>
+
+#### Step 3: Represent 8 and 17 in other format.
+
+```c
 #include <stdio.h>
-void divide(int divider, int divident){
-	int quotient = divider + divident;
-printf(“%d”,quotient);
+
+void divide(int divider, int dividend){
+    int quotient = divider + dividend;
+    printf(“%d”, quotient);
 }
+
 void main(){
-	divide(010,021);
+    divide(010, 021);
 }
 ```
-Step 4: Add irrelevant contents.
-```  
+<br>
+
+#### Step 4: Add irrelevant contents.
+```c  
 #include <stdio.h>
-void divide(int divider, int divident){
-	int quotient = 000;
-divider ? (quotient += divider + divident): (quotient = divider + divident);
-printf(“%d”,divider+divident);
+
+void divide(int divider, int dividend){
+    int quotient = 000;
+    divider ? (quotient += divider + dividend) : (quotient = divider + dividend);
+    printf(“%d”, divider + dividend);
 }
+
 void main(){
-	divide(010,021);
+    divide(010, 021);
 }
 ```
-Step 5: Now remove indentation and white spaces.
+<br>
+
+#### Step 5: Now remove indentation and white spaces.
+```c
+#include<stdio.h>divide(intdivider,intdividend)
+{intquotient=000;divider?(quotient+=divider+dividend):(quotient=
+divider+dividend);printf(“%d”,divider+dividend);}main(){divide(010,021);}
 ```
-#include<stdio.h>divide(intdivider,intdivident)
-{intquotient=000;divider?(quotient+=divider+divident):(quotient=
-divider+divident);printf(“%d”,divider+divident);}main(){divide(010,021);}
-```
-<p style="text-style: bold;">
-Obfuscated code:
-</p>
-```
-#include<stdio.h>divide(intdivider,intdivident)
-{intquotient=000;divider?(quotient+=divider+divident):(quotient=
-divider+divident);printf(“%d”,divider+divident);}main(){divide(010,021);}
+<br>
+
+#### Obfuscated code:
+```c
+#include<stdio.h>divide(intdivider,intdividend)
+{intquotient=000;divider?(quotient+=divider+dividend):(quotient=
+divider+dividend);printf(“%d”,divider+dividend);}main(){divide(010,021);}
 ```
 
 So now you’re good to go, reverse everything you have done in each step, starting from step 5 (preferably).
