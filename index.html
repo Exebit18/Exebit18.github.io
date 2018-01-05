@@ -3,7 +3,7 @@ layout: default
 is_home: True
 ---
 
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 	<div>
 		<h2 style="margin-bottom: 0px;">
           <a class="post-link" href="{{ site.baseurl }}{{ post.url }} ">{{ post.title }}</a>
@@ -19,3 +19,11 @@ is_home: True
 	<br>
 	<br>
 {% endfor %}
+
+<div style="text-align: center;">
+	<ul class="pagination pagination-sm">
+	  <li><a href="{{paginator.previous_page_path}}" style="font-size: 1.2em;">&lt;Prev</a></li>
+	  <li class="active"><a href="#" style="font-size: 1.2em; background: grey; border-color: grey;">{{paginator.page}} / {{paginator.total_pages}}</a></li>
+	  <li><a href="{{paginator.next_page_path}}" style="font-size: 1.2em;">Next&gt;</a></li>
+	</ul>
+</div>
