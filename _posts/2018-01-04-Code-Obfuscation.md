@@ -136,3 +136,7 @@ Remember what we have explained here is just an example to make it easy. Real ob
 
 1. [Wikipedia](https://en.wikipedia.org/wiki/Obfuscation_(software))
 2. [goExpert example](https://www.go4expert.com/articles/create-obfuscated-code-c-t27261/)
+
+<br>
+#### Stay tuned to our <a href="https://www.facebook.com/{{ site.footer-links.facebook }}">Facebook Page</a> for events related to Code Obfuscation!
+<br>
