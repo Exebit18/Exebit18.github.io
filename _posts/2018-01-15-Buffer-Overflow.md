@@ -23,13 +23,16 @@ Have you ever though what happens if we access an array beyond it's bounds?
 
 Let us now look at how the stack is organized when a program is executing.
 
-![Stack Structure]({{"/images/stack.png"}})
+<br>
+<div style="text-align: center;">
+<img src="/images/stack.png" alt="Stack Structure">
+</div>
 <br>
 
 Consider the below program:
 
 ```c
-void function(int a,int b)
+void function(int a, int b)
 {
     char buffer1[5];
     char buffer2[10];
@@ -43,7 +46,10 @@ void main()
 <br>
 The stack for theabove will be organized in the following way:
 
-![Program Stack]({{"/images/actual_stack.png"}})
+<br>
+<div style="text-align: center;">
+<img src="/images/actual_stack.png" alt="Program Stack">
+</div>
 <br>
 
 ## The Attack
