@@ -1,6 +1,6 @@
 ---
 layout : post
-title : 'Python Setup'
+title : 'Python Workshop: Python Setup'
 category : ['Python Workshop',]
 ---
 
