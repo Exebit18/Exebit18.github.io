@@ -20,6 +20,7 @@ else:
     print "a is not equal to b"
 ```
 
+<br>
 ## 2. in Operator
 
 Evaluates to `True` if it finds a variable in the specified sequence and `False` otherwise. `x in y`, here `in` results in a `True` if `x` is a member of sequence `y`.
@@ -34,6 +35,7 @@ else:
     print "a is not in the list"
 ```
 
+<br>
 ## 3. while Loop
 
 ![while loop]({{"/images/while.jpg"}})
@@ -54,6 +56,7 @@ __Example:__ Program to print odd numbers less than 10
 9
 ```
 
+<br>
 ## 4. for Loop
 
 ![for loop]({{"/images/for.jpg"}})
@@ -91,6 +94,7 @@ __Example 3:__
 [ 'Exebit', '2018', 'IITM' ]
 ```
 
+<br>
 ## 5. Loop Control Statement – ‘break’
 
 * Terminates the current loop and resumes execution at the next statement
@@ -125,6 +129,7 @@ __Example 2:__
 6
 ```
 
+<br>
 ## 6. Loop Control Statement – ‘continue’
 
 * The `continue` statement rejects all the remaining statements in the current iteration of the loop and moves the control back to the top of the loop.
@@ -163,10 +168,12 @@ __Example 2:__
 0
 ```
 
+<br>
 ## Try it Yourself
 
 Write a program to check if a number is prime or not using both `while` and `for` loop.
 
+<br>
 ## 7. Lists
 
 * Versatile datatype available in Python
@@ -232,6 +239,7 @@ __Example 5:__ List methods
 [5, 5, 3, 2, 1, 1, 1, 1, 1, 0]
 ```
 
+<br>
 ## 8. List Comprehension vs Loops 
 
 Example to create a list of squares.
@@ -261,6 +269,7 @@ __Example:__
 [0, 1, 8, 27, 64, 125, 216, 343, 512, 729]
 ```
 
+<br>
 ## 9. List comprehensions with more than 1 loops
 
 __Example:__ 
@@ -274,6 +283,7 @@ __Example:__
 [(1, 'Python'), (1, 'Perl'), (2, 'Python'), (2, 'Perl'), (3, 'Python'), (3,’Perl’)]
 ```
 
+<br>
 ## 10. Problem: Print all primes less than 100
 ```python
 >>> primes = [h for h in range(2, 100) if h not in [j for i in range(2, 10) for j in range(i*2, 100, i)]]
@@ -281,6 +291,7 @@ __Example:__
 [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
 ```
 
+<br>
 ## 11. Strings
 
 __Example 1:__ 
@@ -322,6 +333,7 @@ __Example 3:__
 ['Exebit', '2018', 'IIT', 'Madras']
 ```
 
+<br>
 ## Try it Yourself
 
 1. Write a program that prints the reverse of a string
