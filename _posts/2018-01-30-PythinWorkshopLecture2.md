@@ -53,7 +53,7 @@ else
 print “a is not in the list”
 ```
 
-## FOR LOOP
+## WHILE LOOP
 
 ![while loop]({{"/images/while.jpg"}})
 
