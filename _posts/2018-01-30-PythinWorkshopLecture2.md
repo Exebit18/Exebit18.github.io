@@ -55,7 +55,7 @@ print “a is not in the list”
 
 ## FOR LOOP
 
-![while loop]({{"/while.jpg"}})
+![while loop]({{"/images/while.jpg"}})
 
 ## WHILE STATEMENT
 
@@ -77,7 +77,7 @@ i+=2                # it means i=i+2
 
 ## FOR LOOP
 
-![for loop]({{"/for.jpg"}})
+![for loop]({{"/images/for.jpg"}})
 
 ## FOR STATEMENT
 ```python
@@ -305,9 +305,9 @@ Here are a few problems to try out.
 * Write a program that prints the reverse of a string
 * Program to check if a string is a palindrome or not.
 * Write two programs to print the following pattern using while loop and for loop
-1
-1 2
-1 2 3
-1 2 3 4
-1 2 3 4 5
-1 2 3 4 5 6
+1<br>
+1 2<br>
+1 2 3<br>
+1 2 3 4<br>
+1 2 3 4 5<br>
+1 2 3 4 5 6<br>
