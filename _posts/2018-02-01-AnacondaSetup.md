@@ -136,10 +136,10 @@ If no errors show up, you already have them installed.
     
 1. Download the Windows Installer
 
-There are two versions of the installer, one for 32-bit Windows, and one for 64-bit Windows. Microsoft provides instructions here to determine if you have a 32 or 64-bit setup. If you are running 32-bit Windows, be sure that you select the 32-bit version, and if you are running 64-bit Windows, you can download either version.  
+	There are two versions of the installer, one for 32-bit Windows, and one for 64-bit Windows. Microsoft provides instructions here to determine if you have a 32 or 64-bit setup. If you are running 32-bit Windows, be sure that you select the 32-bit version, and if you are running 64-bit Windows, you can download either version.  
 
-	64-bit Graphical Installer (500 MB)
-	32-bit Graphical Installer (403 MB)
+	`64-bit Graphical Installer (500 MB)`
+	`32-bit Graphical Installer (403 MB)`
 
 2. Double click the .exe file.
 
