@@ -38,8 +38,8 @@ You can install Anaconda using either the graphical installer (“wizard”) or 
 
 	**NOTE:** If you enter “no”, specify the path to Anaconda.
 
-    * Add `export PATH="/<path to anaconda>/bin:$PATH"` in .bashrc or .bash_profile.
-    * Or set the PATH variable: `export PATH="/<path to anaconda>/bin:$PATH"` .Replace “<path to anaconda>” with the actual path to your Anaconda installation.
+	Add `export PATH="/<path to anaconda>/bin:$PATH"` in .bashrc or .bash_profile.
+	Or set the PATH variable: `export PATH="/<path to anaconda>/bin:$PATH"` .Replace “<path to anaconda>” with the actual path to your Anaconda installation.
 
 7. The installer finishes and displays “Thank you for installing Anaconda!”
 
@@ -50,16 +50,16 @@ You can install Anaconda using either the graphical installer (“wizard”) or 
 ## Verifying Installation
 
 Open Anaconda Navigator, which is automatically installed when you install Anaconda.<br>
-	* Click Launchpad - then select Anaconda Navigator. If it opens, you have successfully installed Anaconda.
+* Click Launchpad - then select Anaconda Navigator. If it opens, you have successfully installed Anaconda.
 
 You can also use conda in a terminal window 
 
 To open a terminal window or Anaconda Prompt: Open Launchpad, then open 'Terminal' or 'iTerm'.
 
 After opening the terminal window or Anaconda Prompt, choose any of the following methods:
-	* Enter a command such as `conda list`. If Anaconda is installed and working, this will display a list of installed packages and their versions.
-	* Enter the command `python`. This command runs the Python shell. If Anaconda is installed and working, the version information it displays when it starts up will include “Anaconda”. To exit the Python shell, enter the command `quit()`.
- 	* Open Anaconda Navigator with the command `anaconda-navigator`. If Anaconda is installed properly, the graphical program Anaconda Navigator will open.
+* Enter a command such as `conda list`. If Anaconda is installed and working, this will display a list of installed packages and their versions.
+* Enter the command `python`. This command runs the Python shell. If Anaconda is installed and working, the version information it displays when it starts up will include “Anaconda”. To exit the Python shell, enter the command `quit()`.
+* Open Anaconda Navigator with the command `anaconda-navigator`. If Anaconda is installed properly, the graphical program Anaconda Navigator will open.
 
 
 ## Launching Spyder and Installing Libraries
@@ -77,7 +77,7 @@ Follow the Graphical Installer instructions
 
 3. Answer the prompts on the Introduction, Read Me and License screens.
 
-4. On the Destination Select screen, select Install for me only.
+4. On the Destination Select screen, select Install for me only.<br>
 	**NOTE:** If you get the error message “You cannot install Anaconda in this location,” reselect Install for me only.
 
 5. On the Installation Type screen, you may choose to install in another location. The standard install puts Anaconda in your home user directory (recommended)
