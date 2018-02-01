@@ -98,7 +98,7 @@ Follow Windows instructions for matplotlib and numpy.
 	`32-Bit Installer (413 MB)`
 
 2.  Enter the following to install Anaconda for Python 2.7:
-	`bash ~/Downloads/Anaconda2-5.0.1-Linux-x86_64.sh`
+	`bash ~/Downloads/Anaconda2-5.0.1-Linux-x86_64.sh` <br>
 	**NOTE:** Include the `bash` command regardless of whether or not you are using Bash shell.<br>
 	**NOTE:** If you did not download to your Downloads directory, replace `~/Downloads/` with the path to the file you downloaded.<br>
 	**NOTE:** Choose “Install Anaconda as a user” unless root privileges are required.
@@ -139,6 +139,7 @@ If no errors show up, you already have them installed.
 There are two versions of the installer, one for 32-bit Windows, and one for 64-bit Windows. Microsoft provides instructions here to determine if you have a 32 or 64-bit setup. If you are running 32-bit Windows, be sure that you select the 32-bit version, and if you are running 64-bit Windows, you can download either version.  
 
 	`64-bit Graphical Installer (500 MB)`
+	<br>
 	`32-bit Graphical Installer (403 MB)`
 
 2. Double click the .exe file.
