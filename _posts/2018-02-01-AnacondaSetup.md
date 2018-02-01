@@ -50,21 +50,21 @@ You can install Anaconda using either the graphical installer (“wizard”) or 
 ## Verifying Installation
 
 Open Anaconda Navigator, which is automatically installed when you install Anaconda.<br>
-    * Click Launchpad - then select Anaconda Navigator. If it opens, you have successfully installed Anaconda.
+	* Click Launchpad - then select Anaconda Navigator. If it opens, you have successfully installed Anaconda.
 
 You can also use conda in a terminal window 
 
 To open a terminal window or Anaconda Prompt: Open Launchpad, then open 'Terminal' or 'iTerm'.
 
 After opening the terminal window or Anaconda Prompt, choose any of the following methods:
-    * Enter a command such as `conda list`. If Anaconda is installed and working, this will display a list of installed packages and their versions.
-    * Enter the command `python`. This command runs the Python shell. If Anaconda is installed and working, the version information it displays when it starts up will include “Anaconda”. To exit the Python shell, enter the command `quit()`.
-    * Open Anaconda Navigator with the command `anaconda-navigator`. If Anaconda is installed properly, the graphical program Anaconda Navigator will open.
+	* Enter a command such as `conda list`. If Anaconda is installed and working, this will display a list of installed packages and their versions.
+	* Enter the command `python`. This command runs the Python shell. If Anaconda is installed and working, the version information it displays when it starts up will include “Anaconda”. To exit the Python shell, enter the command `quit()`.
+ 	* Open Anaconda Navigator with the command `anaconda-navigator`. If Anaconda is installed properly, the graphical program Anaconda Navigator will open.
 
 
 ## Launching Spyder and Installing Libraries
 
-    * Follow the Graphical Installer instructions
+Follow the Graphical Installer instructions
 
 # Graphical Installing on macOS
 
@@ -99,8 +99,8 @@ Follow Windows instructions for matplotlib and numpy.
 
 2.  Enter the following to install Anaconda for Python 2.7:
 	`bash ~/Downloads/Anaconda2-5.0.1-Linux-x86_64.sh`
-	**NOTE:** Include the `bash` command regardless of whether or not you are using Bash shell.
-	**NOTE:** If you did not download to your Downloads directory, replace `~/Downloads/` with the path to the file you downloaded.
+	**NOTE:** Include the `bash` command regardless of whether or not you are using Bash shell.<br>
+	**NOTE:** If you did not download to your Downloads directory, replace `~/Downloads/` with the path to the file you downloaded.<br>
 	**NOTE:** Choose “Install Anaconda as a user” unless root privileges are required.
 
 3. The installer prompts “In order to continue the installation process, please review the license agreement.” Click Enter to view license terms.
@@ -138,15 +138,15 @@ If no errors show up, you already have them installed.
 
 There are two versions of the installer, one for 32-bit Windows, and one for 64-bit Windows. Microsoft provides instructions here to determine if you have a 32 or 64-bit setup. If you are running 32-bit Windows, be sure that you select the 32-bit version, and if you are running 64-bit Windows, you can download either version.  
 
-	64-bit Graphical Installer (500 MB)
-	32-bit Graphical Installer (403 MB)
+	`64-bit Graphical Installer (500 MB)`
+	`32-bit Graphical Installer (403 MB)`
 
 2. Double click the .exe file.
 
 3. Follow the instructions on the screen
 
-If you are unsure about any setting, accept the defaults. You can change them later.
-When installation is finished, from the **Start** menu, open the Anaconda Prompt.
+	If you are unsure about any setting, accept the defaults. You can change them later.
+	When installation is finished, from the **Start** menu, open the Anaconda Prompt.
 
 4. Test the installation.
 
@@ -163,8 +163,8 @@ Launch `Spyder` from `Start` Menu
 <br><br>
 
 Opening the Spyder application should present you with the following window. This window contains two commonly used parts, among others:
-    * Code Editor that lets you create and edit existing Python source files 
-    * IPython interpreter pane, which gives you access to the Python interactive mode 
+* Code Editor that lets you create and edit existing Python source files 
+* IPython interpreter pane, which gives you access to the Python interactive mode 
 <br><br>
 ![spyder]({{"/images/spyder.jpg"}})
 <br><br>
@@ -180,6 +180,7 @@ If no errors show up, you already have them installed.
 ## Users already having anaconda
 
 For those who to run python 2.7 on anaconda of python 3 here's a link which can help you out.
+<br>
 [Managing python](https://conda.io/docs/user-guide/tasks/manage-python.html#using-a-different-version-of-python)
 
 
