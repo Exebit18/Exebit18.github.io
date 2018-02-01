@@ -23,8 +23,8 @@ You can install Anaconda using either the graphical installer (“wizard”) or 
 
 	`bash ~/Downloads/Anaconda2-5.0.1-MacOSX-x86_64.sh`
 
-**NOTE:** Include the `bash` command regardless of whether or not you are using the Bash shell.
-**NOTE:** Replace `~/Downloads` with your actual path and `Anaconda2-5.0.1-MacOSX-x86_64.sh` with actual name of the file you downloaded.
+	**NOTE:** Include the `bash` command regardless of whether or not you are using the Bash shell.
+	**NOTE:** Replace `~/Downloads` with your actual path and `Anaconda2-5.0.1-MacOSX-x86_64.sh` with actual name of the file you downloaded.
 
 3. The installer prompts “In order to continue the installation process, please review the license agreement.” Click Enter to view license terms.
 
@@ -32,14 +32,14 @@ You can install Anaconda using either the graphical installer (“wizard”) or 
 
 5. The installer prompts you to Press Enter to confirm the location, Press 'CTRL-C' to cancel the installation or specify an alternate installation directory. If you accept the default install location, the installer displays “PREFIX=/home/<user>/anaconda<2 or 3>” and continues the installation. It may take a few minutes to complete.
 
-**NOTE:** We recommend you accept the default install location.
+	**NOTE:** We recommend you accept the default install location.
 
 6. The installer prompts “Do you wish the installer to 'prepend' the Anaconda install location to PATH in your /home/<user>/.bash_profile ?” We recommend “yes”.
 
-**NOTE:** If you enter “no”, specify the path to Anaconda.
+	**NOTE:** If you enter “no”, specify the path to Anaconda.
 
-    • Add `export PATH="/<path to anaconda>/bin:$PATH"` in .bashrc or .bash_profile.
-    • Or set the PATH variable: `export PATH="/<path to anaconda>/bin:$PATH"` .Replace “<path to anaconda>” with the actual path to your Anaconda installation.
+    * Add `export PATH="/<path to anaconda>/bin:$PATH"` in .bashrc or .bash_profile.
+    * Or set the PATH variable: `export PATH="/<path to anaconda>/bin:$PATH"` .Replace “<path to anaconda>” with the actual path to your Anaconda installation.
 
 7. The installer finishes and displays “Thank you for installing Anaconda!”
 
@@ -49,22 +49,22 @@ You can install Anaconda using either the graphical installer (“wizard”) or 
 
 ## Verifying Installation
 
-Open Anaconda Navigator, which is automatically installed when you install Anaconda.
-    • Click Launchpad - then select Anaconda Navigator. If it opens, you have successfully installed Anaconda.
+Open Anaconda Navigator, which is automatically installed when you install Anaconda.<br>
+    * Click Launchpad - then select Anaconda Navigator. If it opens, you have successfully installed Anaconda.
 
 You can also use conda in a terminal window 
 
 To open a terminal window or Anaconda Prompt: Open Launchpad, then open 'Terminal' or 'iTerm'.
 
 After opening the terminal window or Anaconda Prompt, choose any of the following methods:
-    • Enter a command such as `conda list`. If Anaconda is installed and working, this will display a list of installed packages and their versions.
-    • Enter the command `python`. This command runs the Python shell. If Anaconda is installed and working, the version information it displays when it starts up will include “Anaconda”. To exit the Python shell, enter the command `quit()`.
-    • Open Anaconda Navigator with the command `anaconda-navigator`. If Anaconda is installed properly, the graphical program Anaconda Navigator will open.
+    * Enter a command such as `conda list`. If Anaconda is installed and working, this will display a list of installed packages and their versions.
+    * Enter the command `python`. This command runs the Python shell. If Anaconda is installed and working, the version information it displays when it starts up will include “Anaconda”. To exit the Python shell, enter the command `quit()`.
+    * Open Anaconda Navigator with the command `anaconda-navigator`. If Anaconda is installed properly, the graphical program Anaconda Navigator will open.
 
 
 ## Launching Spyder and Installing Libraries
 
-    • Follow the Graphical Installer instructions
+    * Follow the Graphical Installer instructions
 
 # Graphical Installing on macOS
 
@@ -78,7 +78,7 @@ After opening the terminal window or Anaconda Prompt, choose any of the followin
 3. Answer the prompts on the Introduction, Read Me and License screens.
 
 4. On the Destination Select screen, select Install for me only.
-**NOTE:** If you get the error message “You cannot install Anaconda in this location,” reselect Install for me only.
+	**NOTE:** If you get the error message “You cannot install Anaconda in this location,” reselect Install for me only.
 
 5. On the Installation Type screen, you may choose to install in another location. The standard install puts Anaconda in your home user directory (recommended)
 
@@ -99,9 +99,9 @@ Follow Windows instructions for matplotlib and numpy.
 
 2.  Enter the following to install Anaconda for Python 2.7:
 	`bash ~/Downloads/Anaconda2-5.0.1-Linux-x86_64.sh`
-**NOTE:** Include the `bash` command regardless of whether or not you are using Bash shell.
-**NOTE:** If you did not download to your Downloads directory, replace `~/Downloads/` with the path to the file you downloaded.
-**NOTE:** Choose “Install Anaconda as a user” unless root privileges are required.
+	**NOTE:** Include the `bash` command regardless of whether or not you are using Bash shell.
+	**NOTE:** If you did not download to your Downloads directory, replace `~/Downloads/` with the path to the file you downloaded.
+	**NOTE:** Choose “Install Anaconda as a user” unless root privileges are required.
 
 3. The installer prompts “In order to continue the installation process, please review the license agreement.” Click Enter to view license terms.
 
@@ -111,7 +111,7 @@ Follow Windows instructions for matplotlib and numpy.
 
 6. The installer prompts “Do you wish the installer to prepend the Anaconda<2 or 3> install location to PATH in your /home/<user>/.bashrc ?” Enter Yes.
 
-NOTE: If you enter “No”, you must manually add the path to Anaconda or conda will not work.
+	**NOTE:** If you enter “No”, you must manually add the path to Anaconda or conda will not work.
 
 7. The installer finishes and displays “Thank you for installing Anaconda<2 or 3>!”
 
@@ -126,9 +126,9 @@ NOTE: If you enter “No”, you must manually add the path to Anaconda or conda
 2. Type `spyder` in Terminal to launch Spyder  
 Installing and Testing Matplotlib and Numpy
 If you’re using Anaconda Python, your system should already have numpy and matplotlib installed. Start Spyder and type “import numpy” and “import matplotlib” into the prompts.
-<br>
+<br><br>
 ![Python console]({{"/images/pyconsole.jpg"}})
-<br>
+<br><br>
 If no errors show up, you already have them installed.
 
 
@@ -158,23 +158,23 @@ For a successful installation, a list of installed packages appear.
 When you download and install the Anaconda distribution of Python, you are getting several tools related to Python development. One of the tools is Spyder (Scientific Python Development Environment), an integrated development environment useful for writing, running, and debugging code.
 
 Launch `Spyder` from `Start` Menu
-<br>
+<br><br>
 ![start menu]({{"/images/start.jpg"}})
-<br>
+<br><br>
 
 Opening the Spyder application should present you with the following window. This window contains two commonly used parts, among others:
-    • Code Editor that lets you create and edit existing Python source files 
-    • IPython interpreter pane, which gives you access to the Python interactive mode 
-<br>
+    * Code Editor that lets you create and edit existing Python source files 
+    * IPython interpreter pane, which gives you access to the Python interactive mode 
+<br><br>
 ![spyder]({{"/images/spyder.jpg"}})
-<br>
+<br><br>
 
 
 ## Installing and Testing Matplotlib and Numpy
 If you’re using Anaconda Python, your system should already have numpy and matplotlib installed. Start Spyder and type “import numpy” and “import matplotlib” into the prompts.
-<br>
+<br><br>
 ![Python console]({{"/images/pytcon.jpg"}})
-<br>
+<br><br>
 If no errors show up, you already have them installed.
 
 ## Users already having anaconda
