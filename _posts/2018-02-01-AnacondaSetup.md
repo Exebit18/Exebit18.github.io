@@ -1,6 +1,6 @@
 ---
 layout : post
-title : 'Anaconda Setup'
+title : 'Python Workshop: Anaconda Setup'
 category : ['Python Workshop',]
 ---
 
@@ -19,7 +19,7 @@ Follow the guide [here]().
 ## 3. Setup on MacOs
 
 Follow the guide [here]().
- 
+
 ## 4. Setup on Windows
   
 1. **Anaconda Installation:**    
