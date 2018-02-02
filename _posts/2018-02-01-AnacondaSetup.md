@@ -8,7 +8,6 @@ This blog post would help you to setup anaconda.
 
 **NOTE:** It is advisable to use Python 2 since most of the lectures will be based on Python 2.
 
-
 # Installation for MacOs
 
 You can install Anaconda using either the graphical installer (“wizard”) or the command line (“manual”) instructions below. If you are unsure, choose the graphical install.
