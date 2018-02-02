@@ -14,11 +14,11 @@ For those who want to run python 2.7 on anaconda of python 3, here's a [guide](h
 
 ## 2. Setup on Linux
 
-Follow the guide [here](). 
+Follow the guide [here](https://conda.io/docs/user-guide/install/linux.html). 
 
 ## 3. Setup on MacOs
 
-Follow the guide [here]().
+Follow the guide [here](https://conda.io/docs/user-guide/install/macos.html).
 
 ## 4. Setup on Windows
   
