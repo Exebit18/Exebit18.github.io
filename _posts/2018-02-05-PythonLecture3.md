@@ -60,6 +60,7 @@ The commonly used functions in file handling are:
 * write(data) : writes to file(the file must be opened in a mode that supports writing)
 * close() : to close the file pointer. The file pointer can no longer be used to access the file.
 <br>
+
 ## Functions
 
 Functions are used for the following reasons:
@@ -69,6 +70,7 @@ Functions are used for the following reasons:
 * Output of the function is returned to the caller.
 * Since typing is not strict in Python, argument types and return types do not need to be specified. If wrong types are passed/returned, an error will be thrown if it is used wrongly.
 <br>
+
 ## NumPy and Matplotlib Libraries
 
 * NumPy Provides functions to perform operations on arrays and matrices.
@@ -76,13 +78,18 @@ Functions are used for the following reasons:
 * Pyplot within Matplotlib can be used to draw plots in Python.
 * A tutorial for Matplotlib’s Pytplot can be found [here](https://matplotlib.org/tutorials/introductory/pyplot.html)
 <br>
+
 ## Exercise
 
 1. Write a program to produce a dictionary B from a list A that initially has
    N strings. The strings in the list A should be the keys of B and the
    corresponding lengths of the strings are the corresponding values.
+   <br>
+
    **Example:**
    A = [‘hello’, ‘how’, ‘are’]
+   <br>
+
    **Output:** {‘hello’: 5, ‘how’: 3, ‘are’: 3}
 
 2. Do the program on the previous slide assuming that the strings are stored
@@ -90,7 +97,9 @@ Functions are used for the following reasons:
 
 3. Write a function that takes an integer as argument and returns a list of all
    the Fibonacci numbers(starting from 1).
+   <br>
    **Example:**
    n = 10
+   <br>
    **Output:** [1, 1, 2, 3, 5, 8]
 
