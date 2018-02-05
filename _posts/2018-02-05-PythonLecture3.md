@@ -65,7 +65,7 @@ The commonly used functions in file handling are:
 
 Functions are used for the following reasons:
 * **Reusability:** Once a function is defined, it can be used over and over again.
-* Abstraction: Once the arguments and the behaviour of a function is defined, it can be used without knowing how it works inside.
+* **Abstraction:** Once the arguments and the behaviour of a function is defined, it can be used without knowing how it works inside.
 * Inputs to the function are taken as arguments.
 * Output of the function is returned to the caller.
 * Since typing is not strict in Python, argument types and return types do not need to be specified. If wrong types are passed/returned, an error will be thrown if it is used wrongly.
@@ -85,11 +85,9 @@ Functions are used for the following reasons:
    N strings. The strings in the list A should be the keys of B and the
    corresponding lengths of the strings are the corresponding values.
    <br>
-
    **Example:**
    A = [‘hello’, ‘how’, ‘are’]
    <br>
-
    **Output:** {‘hello’: 5, ‘how’: 3, ‘are’: 3}
 
 2. Do the program on the previous slide assuming that the strings are stored
