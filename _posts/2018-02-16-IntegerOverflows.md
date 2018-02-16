@@ -27,16 +27,18 @@ When an integer overflow occurs, the result should ideally use more bits for sto
 **Example:**
 
 We have two unsigned integers, a and b, both of which are 32 bits long.  We assign to a the maximum value a 32 bit integer can hold, and to b we assign 1.  We add a and b together and store the result in a third unsigned 32 bit integer called r:
-	```
-    a = 0xffffffff
-    b = 0x1
-    r = a + b
-    ```
+```
+a = 0xffffffff
+b = 0x1
+r = a + b
+```
+
 Now, since the result of the addition cannot be represented using 32 bits, the result, in accordance with the ISO standard, is reduced modulo 0x100000000.
-	```
-    r = (0xffffffff + 0x1) % 0x100000000
-    r = (0x100000000) % 0x100000000 = 0
-    ```
+```
+r = (0xffffffff + 0x1) % 0x100000000
+r = (0x100000000) % 0x100000000 = 0
+```
+
 Reducing the result using modulo arithmetic basically ensures that only the lowest 32 bits of the result are used, so integer overflows cause the result to be truncated to a size that can be represented by the variable. This is often called a "wrap around", as the result appears to wrap around to 0.
 
 **Widthness overflows**
@@ -65,11 +67,12 @@ An integer overflow is the result of attempting to store a value in a variable w
    <CODE END>
 ```
 The output of which looks like this:
-	```
-    l = 0xdeadbeef (32 bits)
-    s = 0xffffbeef (16 bits)
-    c = 0xffffffef (8 bits)
-    ```
+```
+l = 0xdeadbeef (32 bits)
+s = 0xffffbeef (16 bits)
+c = 0xffffffef (8 bits)
+```
+
 Since each assignment causes the bounds of the values that can be stored in each type to be exceeded, the value is truncated so that it can fit in the variable it is assigned to.
 
 **Arithmetic overflows**
@@ -94,11 +97,12 @@ Consider this example demonstrating the wrap around shown earlier:
 <CODE END>
 ```
 The output of this program looks like this:
-	```
-    num is 32 bits long
-    num = 0xffffffff
-    num + 1 = 0x0
-    ```
+```
+num is 32 bits long
+num = 0xffffffff
+num + 1 = 0x0
+```
+
 Since an integer is signed by default, an integer overflow can cause a change in signedness which can often have interesting effects on subsequent code.  Consider the following example:
 ```
 <CODE BEGIN>
@@ -117,10 +121,11 @@ Since an integer is signed by default, an integer overflow can cause a change in
  <CODE END>
 ```
 The output of which is:
-	```
-    l = 2147483647 (0x7fffffff)
-    l + 1 = -2147483648 (0x80000000)
-    ```
+```
+l = 2147483647 (0x7fffffff)
+l + 1 = -2147483648 (0x80000000)
+```
+
 Here the integer is initialised with the highest positive value a signed long integer can hold.  When it is incremented, the most significant bit(indicating signedness) is set and the integer is interpreted as being negative.
 
 **Exploiting**
